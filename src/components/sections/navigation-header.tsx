@@ -35,15 +35,14 @@ import {
 
 const tradingLinks = {
   markets: [
-    { title: "All Popular", href: "/" },
-    { title: "Forex", href: "/forex/" },
-    { title: "Cryptocurrencies", href: "/crypto/" },
-    { title: "Synthetic Cryptocurrency Pairs", href: "/synth-crypto/" },
-    { title: "Precious Metals", href: "/precious-metals/" },
-    { title: "Energies", href: "/energies/" },
-    { title: "Equity Indices", href: "/equity-indices/" },
-    { title: "GTi12 Index", href: "/gti12/" },
-    { title: "Stocks", href: "/stocks/" },
+    { title: "All Popular", href: "/markets#popular" },
+    { title: "Forex", href: "/markets#forex" },
+    { title: "Cryptocurrencies", href: "/markets#cryptocurrencies" },
+    { title: "Synthetic Cryptos", href: "/markets#synthetic-cryptos" },
+    { title: "Precious Metals", href: "/markets#precious-metals" },
+    { title: "Energies", href: "/markets#energies" },
+    { title: "Equity Indices", href: "/markets#equity-indices" },
+    { title: "Stocks", href: "/markets#stocks" },
   ],
   accountFeatures: [
     { title: "Account Comparison", href: "/trading-account-types/" },
