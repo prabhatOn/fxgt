@@ -52,8 +52,6 @@ const tradingLinks = {
   ],
   toolsAndPlatforms: [
     { title: "Client Portal", href: "/client-portal/" },
-    { title: "MT5 Trading Tools", href: "/metatrader-5-trading-tools/" },
-    { title: "VPS Sponsorship", href: "/metatrader-vps-sponsorship-program/" },
   ],
 };
 
@@ -62,37 +60,14 @@ const platformsLinks = {
     { title: "Fusion FX App", href: "/fxgt-app/" },
     { title: "Fusion FX Trader", href: "/fxgt-trader/" },
   ],
-  mt5: [
-    { title: "Windows", href: "/metatrader-5-for-windows/" },
-    { title: "macOS", href: "/metatrader-5-for-mac/" },
-    { title: "Android", href: "/metatrader-5-for-android/" },
-    { title: "iOS", href: "/metatrader-5-for-ios/" },
-  ],
-  mt4: [
-    { title: "Windows", href: "/metatrader-4-for-windows/" },
-    { title: "macOS", href: "/metatrader-4-for-macos/" },
-    { title: "Android", href: "/metatrader-4-for-android/" },
-    { title: "iOS", href: "/mt4-for-ios/" },
-  ],
 };
 
 const companyLinks = [
   { title: "About Fusion FX", href: "/about-fxgt/" },
   { title: "Security of Funds", href: "/security-of-funds/" },
-  { title: "Company News", href: "/blog/category/company-news/" },
   { title: "Contact Us", href: "/contact/" },
-  { title: "Fusion FX Careers", href: "https://fxgtcareers.com/" },
   { title: "Legal", href: "/legal/" },
 ];
-
-const researchLinks = [
-  { title: "Blog", href: "/blog" },
-  { title: "Market Analysis", href: "/blog/category/market-analysis/" },
-  { title: "Economic Calendar", href: "/economic-calendar/" },
-  { title: "Holiday Calendar", href: "/trading-holidays-calendar/" },
-];
-
-const partnersLink = { title: "Partners", href: "https://mypartners.fxgt.com/" };
 
 // --------- COMPONENTS ---------
 
@@ -145,15 +120,12 @@ export default function NavigationHeader() {
 
   const isPlatformsActive = [
     ...platformsLinks.fusionFx,
-    ...platformsLinks.mt5,
-    ...platformsLinks.mt4,
   ].some((l) => pathname.startsWith(l.href));
 
   const isPromotionsActive = pathname.startsWith("/trading-promotions");
   const isCompanyActive = companyLinks.some(
     (l) => !l.href.startsWith("http") && pathname.startsWith(l.href),
   );
-  const isResearchActive = researchLinks.some((l) => pathname.startsWith(l.href));
 
   return (
     <>
@@ -218,8 +190,6 @@ export default function NavigationHeader() {
                     title="Fusion FX Platforms"
                     links={platformsLinks.fusionFx}
                   />
-                  <MenuColumn title="MT5" links={platformsLinks.mt5} />
-                  <MenuColumn title="MT4" links={platformsLinks.mt4} />
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -250,29 +220,6 @@ export default function NavigationHeader() {
                   <MenuColumn title="About Us" links={companyLinks} />
                 </div>
               </NavigationMenuContent>
-            </NavigationMenuItem>
-
-            {/* Research */}
-            <NavigationMenuItem>
-              <NavigationMenuTrigger
-                className={`${triggerBase} ${
-                  isResearchActive ? "bg-gray-100" : ""
-                }`}
-              >
-                Research & Education
-              </NavigationMenuTrigger>
-              <NavigationMenuContent className={fullDropdownClasses} style={{ position: 'fixed', left: 0, top: '64px', width: '100vw', backgroundColor: 'white' }}>
-                <div className="mx-auto max-w-6xl h-full grid grid-cols-3 gap-20 px-10 py-12">
-                  <MenuColumn title="Resources" links={researchLinks} />
-                </div>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-
-            {/* Partners */}
-            <NavigationMenuItem>
-              <Link href={partnersLink.href} className={triggerBase}>
-                Partners
-              </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
