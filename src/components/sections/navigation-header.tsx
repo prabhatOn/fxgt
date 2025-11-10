@@ -255,8 +255,115 @@ export default function NavigationHeader() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] p-6 overflow-y-auto">
-              <p className="text-lg font-semibold mb-4">Menu</p>
-              {/* Keeping mobile simple */}
+              <div className="flex flex-col gap-6">
+                <p className="text-lg font-semibold">Menu</p>
+                
+                <Accordion type="single" collapsible className="w-full">
+                  {/* Trading */}
+                  <AccordionItem value="trading">
+                    <AccordionTrigger className="text-base font-medium">Trading</AccordionTrigger>
+                    <AccordionContent>
+                      <div className="flex flex-col gap-4 pl-4">
+                        <p className="text-xs font-semibold uppercase text-gray-500 mt-2">Markets</p>
+                        {tradingLinks.markets.map((link) => (
+                          <SheetClose asChild key={link.href}>
+                            <Link href={link.href} className="text-sm text-slate-800 hover:text-black">
+                              {link.title}
+                            </Link>
+                          </SheetClose>
+                        ))}
+                        
+                        <p className="text-xs font-semibold uppercase text-gray-500 mt-4">Account Features</p>
+                        {tradingLinks.accountFeatures.map((link) => (
+                          <SheetClose asChild key={link.href}>
+                            <Link href={link.href} className="text-sm text-slate-800 hover:text-black flex items-center gap-2">
+                              {link.title}
+                              {link.tag === "new" && (
+                                <span className="text-[10px] bg-slate-200 text-black px-2 py-[2px] rounded-full uppercase">
+                                  New
+                                </span>
+                              )}
+                            </Link>
+                          </SheetClose>
+                        ))}
+                        
+                        <p className="text-xs font-semibold uppercase text-gray-500 mt-4">Tools & Platforms</p>
+                        {tradingLinks.toolsAndPlatforms.map((link) => (
+                          <SheetClose asChild key={link.href}>
+                            <Link href={link.href} className="text-sm text-slate-800 hover:text-black">
+                              {link.title}
+                            </Link>
+                          </SheetClose>
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  {/* Platforms */}
+                  <AccordionItem value="platforms">
+                    <AccordionTrigger className="text-base font-medium">Platforms</AccordionTrigger>
+                    <AccordionContent>
+                      <div className="flex flex-col gap-4 pl-4">
+                        <p className="text-xs font-semibold uppercase text-gray-500 mt-2">Investmin Platforms</p>
+                        {platformsLinks.fusionFx.map((link) => (
+                          <SheetClose asChild key={link.href}>
+                            <Link href={link.href} className="text-sm text-slate-800 hover:text-black">
+                              {link.title}
+                            </Link>
+                          </SheetClose>
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  {/* Company */}
+                  <AccordionItem value="company">
+                    <AccordionTrigger className="text-base font-medium">Company</AccordionTrigger>
+                    <AccordionContent>
+                      <div className="flex flex-col gap-4 pl-4">
+                        <p className="text-xs font-semibold uppercase text-gray-500 mt-2">About Us</p>
+                        {companyLinks.map((link) => (
+                          <SheetClose asChild key={link.href}>
+                            <Link href={link.href} className="text-sm text-slate-800 hover:text-black">
+                              {link.title}
+                            </Link>
+                          </SheetClose>
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+
+                {/* Promotions */}
+                <SheetClose asChild>
+                  <Link href="/trading-promotions/" className="text-base font-medium text-slate-900 hover:text-black py-2">
+                    Promotions
+                  </Link>
+                </SheetClose>
+
+                {/* Language */}
+                <button className="text-sm font-medium text-slate-800 hover:text-black flex items-center gap-2 py-2">
+                  🌐 English
+                </button>
+
+                {/* Auth Buttons */}
+                <div className="flex flex-col gap-3 pt-4 border-t">
+                  <Button
+                    variant="outline"
+                    asChild
+                    className="w-full rounded-full border-slate-900 text-slate-900 font-semibold"
+                  >
+                    <a href="https://trade.investminuae.com/login">Log In</a>
+                  </Button>
+
+                  <Button
+                    asChild
+                    className="w-full rounded-full bg-slate-800 text-white font-semibold hover:bg-slate-700"
+                  >
+                    <a href="https://trade.investminuae.com/register">Register Now</a>
+                  </Button>
+                </div>
+              </div>
             </SheetContent>
           </Sheet>
         </div>

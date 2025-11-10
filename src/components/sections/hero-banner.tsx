@@ -21,7 +21,7 @@ const HeroBanner = () => {
         </h3>
 
         <h1
-          className="font-display font-medium text-[35px] md:text-[64px] lg:text-[70px] leading-tight tracking-[-0.02em] text-[#202020] mt-4 max-w-[1200px] whitespace-nowrap"
+          className="font-display font-medium text-[28px] sm:text-[35px] md:text-[64px] lg:text-[70px] leading-tight tracking-[-0.02em] text-[#202020] mt-4 max-w-[1200px] text-center"
         >
           SMART INVESTING STARTS HERE
         </h1>
