@@ -30,7 +30,7 @@ const VideoCta = () => {
               Apply and start trading in minutes
             </p>
             <a
-              href="#"
+              href="/register"
               className="inline-block bg-[#0f766e] hover:bg-[#0d6b63] text-white font-body font-semibold py-3.5 px-10 rounded-lg transition-colors text-base"
             >
               Register

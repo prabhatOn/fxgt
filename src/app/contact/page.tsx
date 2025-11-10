@@ -118,7 +118,7 @@ export default function ContactPage() {
                 <Button type="submit" className="bg-[#0f766e] text-white px-8 py-3 rounded-md">Submit</Button>
               </div>
 
-              <p className="mt-6 text-center text-slate-600">By clicking on submit, you acknowledge and consent on processing your data as per our <a href="#" className="underline text-[#0f766e]">Privacy Policy</a></p>
+              <p className="mt-6 text-center text-slate-600">By clicking on submit, you acknowledge and consent on processing your data as per our <a href="/legal#privacy" className="underline text-[#0f766e]">Privacy Policy</a></p>
             </form>
           </div>
         </section>
