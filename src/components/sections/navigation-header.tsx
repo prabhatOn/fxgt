@@ -250,36 +250,36 @@ export default function NavigationHeader() {
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu />
+              <Button variant="ghost" size="icon" className="text-slate-900">
+                <Menu className="text-slate-900" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] p-6 overflow-y-auto">
+            <SheetContent side="right" className="w-[300px] p-6 overflow-y-auto bg-black border-slate-800">
               <div className="flex flex-col gap-6">
-                <p className="text-lg font-semibold">Menu</p>
+                <p className="text-lg font-semibold text-white">Menu</p>
                 
                 <Accordion type="single" collapsible className="w-full">
                   {/* Trading */}
-                  <AccordionItem value="trading">
-                    <AccordionTrigger className="text-base font-medium">Trading</AccordionTrigger>
+                  <AccordionItem value="trading" className="border-slate-800">
+                    <AccordionTrigger className="text-base font-medium text-white hover:text-slate-300">Trading</AccordionTrigger>
                     <AccordionContent>
                       <div className="flex flex-col gap-4 pl-4">
-                        <p className="text-xs font-semibold uppercase text-gray-500 mt-2">Markets</p>
+                        <p className="text-xs font-semibold uppercase text-slate-400 mt-2">Markets</p>
                         {tradingLinks.markets.map((link) => (
                           <SheetClose asChild key={link.href}>
-                            <Link href={link.href} className="text-sm text-slate-800 hover:text-black">
+                            <Link href={link.href} className="text-sm text-white hover:text-slate-300">
                               {link.title}
                             </Link>
                           </SheetClose>
                         ))}
                         
-                        <p className="text-xs font-semibold uppercase text-gray-500 mt-4">Account Features</p>
+                        <p className="text-xs font-semibold uppercase text-slate-400 mt-4">Account Features</p>
                         {tradingLinks.accountFeatures.map((link) => (
                           <SheetClose asChild key={link.href}>
-                            <Link href={link.href} className="text-sm text-slate-800 hover:text-black flex items-center gap-2">
+                            <Link href={link.href} className="text-sm text-white hover:text-slate-300 flex items-center gap-2">
                               {link.title}
                               {link.tag === "new" && (
-                                <span className="text-[10px] bg-slate-200 text-black px-2 py-[2px] rounded-full uppercase">
+                                <span className="text-[10px] bg-slate-700 text-white px-2 py-[2px] rounded-full uppercase">
                                   New
                                 </span>
                               )}
@@ -287,10 +287,10 @@ export default function NavigationHeader() {
                           </SheetClose>
                         ))}
                         
-                        <p className="text-xs font-semibold uppercase text-gray-500 mt-4">Tools & Platforms</p>
+                        <p className="text-xs font-semibold uppercase text-slate-400 mt-4">Tools & Platforms</p>
                         {tradingLinks.toolsAndPlatforms.map((link) => (
                           <SheetClose asChild key={link.href}>
-                            <Link href={link.href} className="text-sm text-slate-800 hover:text-black">
+                            <Link href={link.href} className="text-sm text-white hover:text-slate-300">
                               {link.title}
                             </Link>
                           </SheetClose>
@@ -300,14 +300,14 @@ export default function NavigationHeader() {
                   </AccordionItem>
 
                   {/* Platforms */}
-                  <AccordionItem value="platforms">
-                    <AccordionTrigger className="text-base font-medium">Platforms</AccordionTrigger>
+                  <AccordionItem value="platforms" className="border-slate-800">
+                    <AccordionTrigger className="text-base font-medium text-white hover:text-slate-300">Platforms</AccordionTrigger>
                     <AccordionContent>
                       <div className="flex flex-col gap-4 pl-4">
-                        <p className="text-xs font-semibold uppercase text-gray-500 mt-2">Investmin Platforms</p>
+                        <p className="text-xs font-semibold uppercase text-slate-400 mt-2">Investmin Platforms</p>
                         {platformsLinks.fusionFx.map((link) => (
                           <SheetClose asChild key={link.href}>
-                            <Link href={link.href} className="text-sm text-slate-800 hover:text-black">
+                            <Link href={link.href} className="text-sm text-white hover:text-slate-300">
                               {link.title}
                             </Link>
                           </SheetClose>
@@ -317,14 +317,14 @@ export default function NavigationHeader() {
                   </AccordionItem>
 
                   {/* Company */}
-                  <AccordionItem value="company">
-                    <AccordionTrigger className="text-base font-medium">Company</AccordionTrigger>
+                  <AccordionItem value="company" className="border-slate-800">
+                    <AccordionTrigger className="text-base font-medium text-white hover:text-slate-300">Company</AccordionTrigger>
                     <AccordionContent>
                       <div className="flex flex-col gap-4 pl-4">
-                        <p className="text-xs font-semibold uppercase text-gray-500 mt-2">About Us</p>
+                        <p className="text-xs font-semibold uppercase text-slate-400 mt-2">About Us</p>
                         {companyLinks.map((link) => (
                           <SheetClose asChild key={link.href}>
-                            <Link href={link.href} className="text-sm text-slate-800 hover:text-black">
+                            <Link href={link.href} className="text-sm text-white hover:text-slate-300">
                               {link.title}
                             </Link>
                           </SheetClose>
@@ -336,29 +336,29 @@ export default function NavigationHeader() {
 
                 {/* Promotions */}
                 <SheetClose asChild>
-                  <Link href="/trading-promotions/" className="text-base font-medium text-slate-900 hover:text-black py-2">
+                  <Link href="/trading-promotions/" className="text-base font-medium text-white hover:text-slate-300 py-2">
                     Promotions
                   </Link>
                 </SheetClose>
 
                 {/* Language */}
-                <button className="text-sm font-medium text-slate-800 hover:text-black flex items-center gap-2 py-2">
+                <button className="text-sm font-medium text-white hover:text-slate-300 flex items-center gap-2 py-2">
                   🌐 English
                 </button>
 
                 {/* Auth Buttons */}
-                <div className="flex flex-col gap-3 pt-4 border-t">
+                <div className="flex flex-col gap-3 pt-4 border-t border-slate-800">
                   <Button
                     variant="outline"
                     asChild
-                    className="w-full rounded-full border-slate-900 text-slate-900 font-semibold"
+                    className="w-full rounded-full border-white text-white font-semibold hover:bg-slate-900"
                   >
                     <a href="https://trade.investminuae.com/login">Log In</a>
                   </Button>
 
                   <Button
                     asChild
-                    className="w-full rounded-full bg-slate-800 text-white font-semibold hover:bg-slate-700"
+                    className="w-full rounded-full bg-slate-300 text-slate-900 font-semibold hover:bg-slate-400"
                   >
                     <a href="https://trade.investminuae.com/register">Register Now</a>
                   </Button>
