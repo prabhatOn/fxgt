@@ -71,7 +71,7 @@ const HeroBanner = () => {
 
           <div>
             <h4 className="font-display font-light text-2xl md:text-xl text-[#202020]">Industry Recognition</h4>
-            <p className="text-base md:text-lg text-[#6b7178] mt-4">Trusted and recognized platform.</p>
+            <p className="text-base md:text-lg text-[#6b7178] mb-4 mt-4">Trusted and recognized platform.</p>
           </div>
         </div>
       </div>
