@@ -38,7 +38,7 @@ function Card({ card }: { card: any }) {
   return (
     <div className="bg-white border border-gray-100 rounded-2xl p-8 flex flex-col shadow-sm">
       {card.badge && (
-        <div className="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-md mb-4">
+        <div className="inline-block bg-slate-200 text-slate-900 text-xs font-semibold px-3 py-1 rounded-md mb-4">
           {card.badge}
         </div>
       )}
@@ -49,14 +49,14 @@ function Card({ card }: { card: any }) {
       <ul className="flex-1 space-y-4 mb-6">
         {card.features.map((f: string, i: number) => (
           <li key={i} className="flex items-start gap-3">
-            <Check className="h-5 w-5 text-emerald-600 mt-1 flex-shrink-0" />
+            <Check className="h-5 w-5 text-slate-500 mt-1 flex-shrink-0" />
             <span className="text-sm text-slate-700">{f}</span>
           </li>
         ))}
       </ul>
 
       <div className="mt-4">
-        <Link href="/register/" className={`inline-block w-full text-center py-3 rounded-md ${card.highlight ? 'bg-emerald-800 text-white' : 'border border-emerald-200 text-emerald-800'}`}>
+        <Link href="/register/" className={`inline-block w-full text-center py-3 rounded-md ${card.highlight ? 'bg-slate-300 text-slate-900 hover:bg-slate-400' : 'border border-slate-300 text-slate-900 hover:bg-slate-100'}`}>
           Register
         </Link>
       </div>
@@ -81,13 +81,13 @@ export default function TradingAccountTypesPage() {
         <div className="flex items-center justify-center gap-8 mb-8">
           <button
             onClick={() => setMainTab('accounts')}
-            className={`text-lg font-semibold pb-2 ${mainTab === 'accounts' ? 'border-b-4 border-emerald-800 text-emerald-900' : 'text-slate-500'}`}
+            className={`text-lg font-semibold pb-2 ${mainTab === 'accounts' ? 'border-b-4 border-slate-700 text-slate-900' : 'text-slate-500'}`}
           >
             Account Types
           </button>
           <button
             onClick={() => setMainTab('copy')}
-            className={`text-lg pb-2 ${mainTab === 'copy' ? 'border-b-4 border-emerald-800 text-emerald-900' : 'text-slate-500'}`}
+            className={`text-lg pb-2 ${mainTab === 'copy' ? 'border-b-4 border-slate-700 text-slate-900' : 'text-slate-500'}`}
           >
             Copy Trading
           </button>
@@ -114,13 +114,13 @@ export default function TradingAccountTypesPage() {
             <div className="flex items-center gap-6 mb-8">
               <button
                 onClick={() => setCopyTab('copiers')}
-                className={`text-lg ${copyTab === 'copiers' ? 'text-emerald-800 font-semibold' : 'text-slate-500'}`}
+                className={`text-lg ${copyTab === 'copiers' ? 'text-slate-900 font-semibold' : 'text-slate-500'}`}
               >
                 Copiers
               </button>
               <button
                 onClick={() => setCopyTab('providers')}
-                className={`text-lg ${copyTab === 'providers' ? 'text-emerald-800 font-semibold' : 'text-slate-500'}`}
+                className={`text-lg ${copyTab === 'providers' ? 'text-slate-900 font-semibold' : 'text-slate-500'}`}
               >
                 Strategy Providers
               </button>
@@ -155,15 +155,15 @@ export default function TradingAccountTypesPage() {
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <div className="h-5 w-5 bg-emerald-50 rounded-full flex items-center justify-center">
-                        <Check className="h-4 w-4 text-emerald-600" />
+                      <div className="h-5 w-5 bg-slate-100 rounded-full flex items-center justify-center">
+                        <Check className="h-4 w-4 text-slate-500" />
                       </div>
                       <p className="text-sm text-slate-700">Limit & Stop Levels</p>
                     </div>
                   </div>
 
                   <div className="mt-4">
-                    <Link href="/register/" className={`inline-block w-full text-center py-3 rounded-md bg-emerald-800 text-white`}>
+                    <Link href="/register/" className={`inline-block w-full text-center py-3 rounded-md bg-slate-300 text-slate-900 hover:bg-slate-400`}>
                       Register
                     </Link>
                   </div>
