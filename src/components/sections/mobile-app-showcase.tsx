@@ -26,10 +26,10 @@ const MobileAppShowcase = () => {
                 <div className="grid grid-cols-1 items-center gap-y-12 lg:grid-cols-5 lg:gap-x-12">
                     <div className="text-center lg:col-span-2 lg:flex lg:flex-col lg:justify-center lg:text-left">
                         <h2 className="mb-6 font-raleway text-[32px] font-extrabold leading-[1.2] tracking-[-0.02em] md:text-[36px] lg:text-[44px]">
-                            Trade from the palm of your hands
+                            Invest from anywhere, anytime
                         </h2>
                         <p className="mb-10 font-montserrat text-lg leading-[1.6] text-[#b3b3b3]">
-                            Access markets anytime, on-the-go,&nbsp;with our responsive mobile app, featuring real-time data, advanced charting, and instant order execution.
+                            Access your portfolio on-the-go with our powerful mobile app, featuring real-time market data, advanced analytics, and instant execution.
                         </p>
                         
                         <div className="flex flex-col items-center justify-center gap-8 sm:flex-row lg:justify-start">

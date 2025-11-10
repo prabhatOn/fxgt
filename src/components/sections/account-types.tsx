@@ -10,54 +10,54 @@ type AccountTypeProps = {
 
 const accountTypesData: AccountTypeProps[] = [
   {
-    title: "OPTIMUS",
-    subtitle: "Engineered for formidable day-trading performance.",
+    title: "PREMIUM",
+    subtitle: "Designed for active investors seeking maximum flexibility.",
     features: [
-      "Leverage 1:5000",
+      "Leverage 1:2000",
       "️Spreads from 0.8 pips",
-      "Deposit from: $10",
-      "️Exclusive promotions",
+      "Minimum deposit: $10",
+      "️Special promotions",
     ],
     isHotPick: true,
   },
   {
-    title: "PRO",
-    subtitle: "Built for balanced and professional performance.",
+    title: "PROFESSIONAL",
+    subtitle: "Built for experienced investors with balanced needs.",
     features: [
       "Leverage: 1:1000",
       "Spreads from 0.5 pips",
-      "Deposit from: $10",
-      "Commissions: $0",
+      "Minimum deposit: $10",
+      "Zero commission fees",
     ],
   },
   {
-    title: "ECN ZERO",
-    subtitle: "Crafted for raw market access and speed.",
+    title: "ELITE",
+    subtitle: "Crafted for direct market access and speed.",
     features: [
       "Leverage: 1:1000",
       "Spreads from 0.0 pips",
-      "Deposit from: $100",
+      "Minimum deposit: $100",
       "Institutional-grade execution",
     ],
   },
   {
     title: "STANDARD",
-    subtitle: "A versatile solution for all-around trading.",
+    subtitle: "A versatile solution for everyday investing.",
     features: [
       "Leverage: 1:1000",
-      "Deposit from: $10",
-      "Wide asset range",
-      "Exclusive bonus offerings",
+      "Minimum deposit: $10",
+      "Wide range of assets",
+      "Exclusive bonus offers",
     ],
   },
   {
-    title: "MINI",
-    subtitle: "The perfect starting point for new traders.",
+    title: "STARTER",
+    subtitle: "The perfect entry point for new investors.",
     features: [
       "Leverage: 1:1000",
-      "Deposit from: $5",
-      "Micro-lot trading",
-      "Ideal for building confidence",
+      "Minimum deposit: $5",
+      "Micro-lot investing",
+      "Ideal for learning and growth",
     ],
   },
 ];
@@ -68,7 +68,7 @@ const AccountCard = ({ title, subtitle, features, isHotPick }: AccountTypeProps)
   return (
     <div className="relative bg-card border border-border rounded-2xl p-8 flex flex-col min-h-[400px] flex-shrink-0 w-[90vw] sm:w-auto md:w-[45vw] lg:w-full snap-start transition-transform duration-300 hover:scale-[1.02]">
       {isHotPick && (
-        <span className="absolute top-8 right-8 bg-[#0f766e] text-white text-[12px] font-semibold px-3 py-1 rounded-full">
+        <span className="absolute top-8 right-8 bg-slate-400 text-slate-900 text-[12px] font-semibold px-3 py-1 rounded-full">
           HOT PICK
         </span>
       )}
@@ -82,7 +82,7 @@ const AccountCard = ({ title, subtitle, features, isHotPick }: AccountTypeProps)
         <ul className="space-y-3">
           {cleanFeatures.map((feature, index) => (
             <li key={index} className="flex items-start">
-              <Check className="h-4 w-4 text-[#0f766e] mr-3 mt-1 flex-shrink-0" />
+              <Check className="h-4 w-4 text-slate-400 mr-3 mt-1 flex-shrink-0" />
               <span className="font-body text-[15px] text-[#e5e5e5]">{feature}</span>
             </li>
           ))}
@@ -98,10 +98,10 @@ const AccountTypesSection = () => {
       <div className="max-w-[1400px] mx-auto px-8 py-12 md:py-16 lg:py-20">
         <div className="text-center mb-12">
           <h2 className="font-display font-extrabold text-white text-[32px] md:text-[40px] lg:text-[48px] leading-tight tracking-[-0.02em]">
-            A Trading Account for Every Strategy
+            An Investment Account for Every Goal
           </h2>
           <p className="font-body text-lg text-[#b3b3b3] leading-[1.6] max-w-[900px] mx-auto mt-4">
-            Select from five specialized account types, each engineered to match your trading style, experience level, and capital requirements.
+            Choose from five specialized account types, each designed to match your investment style, experience level, and financial goals.
           </p>
         </div>
 
@@ -114,7 +114,7 @@ const AccountTypesSection = () => {
         <div className="text-center mt-12">
             <a 
               href="#"
-              className="inline-block bg-[#0f766e] hover:bg-[#0d6b63] text-white font-semibold py-[14px] px-8 rounded-lg text-base transition-colors"
+              className="inline-block bg-slate-300 hover:bg-slate-400 text-slate-900 font-semibold py-[14px] px-8 rounded-lg text-base transition-colors"
             >
               Register
             </a>

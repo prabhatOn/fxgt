@@ -9,28 +9,28 @@ import Footer from "@/components/sections/footer";
 const cards = [
   {
     badge: "HOT PICK",
-    title: "OPTIMUS",
-    subtitle: "Optimized for Day-Trading",
-    features: ["Spreads from 0.8 pips", "Leverage up to 1:5000", "Promotions"],
+    title: "PREMIUM",
+    subtitle: "Designed for active investors seeking maximum flexibility.",
+    features: ["Spreads from 0.8 pips", "Leverage up to 1:2000", "Special promotions"],
     highlight: true,
   },
   {
     badge: null,
-    title: "PRO",
-    subtitle: "Perfect for Every Trader",
-    features: ["Spreads from 0.5 pips", "Leverage up to 1:1000", "Swap-Free"],
+    title: "PROFESSIONAL",
+    subtitle: "Balanced features for experienced investors.",
+    features: ["Spreads from 0.5 pips", "Leverage up to 1:1000", "Commission-free options"],
   },
   {
     badge: null,
-    title: "ECN ZERO",
-    subtitle: "Ideal for Short-Term Trades",
-    features: ["Spreads from 0.0 pips", "Leverage up to 1:1000", "Limit & Stop Levels"],
+    title: "ELITE",
+    subtitle: "Low spreads and direct market access for precision trading.",
+    features: ["Spreads from 0.0 pips", "Leverage up to 1:1000", "Institutional-grade execution"],
   },
   {
     badge: null,
     title: "STANDARD",
-    subtitle: "Made for All Traders",
-    features: ["Spreads from 1.3 pips", "Leverage up to 1:1000", "Promotions"],
+    subtitle: "A versatile account for everyday investing.",
+    features: ["Spreads from 1.3 pips", "Leverage up to 1:1000", "Flexible deposit options"],
   },
 ];
 
@@ -73,8 +73,8 @@ export default function TradingAccountTypesPage() {
       <NavigationHeader />
       <div className="max-w-[1200px] mx-auto px-6 py-20">
         <div className="text-center mb-12">
-          <h1 className="font-display font-extrabold text-4xl md:text-5xl text-slate-900">A Trading Account for Every Trader</h1>
-          <p className="mt-4 text-slate-600 max-w-[900px] mx-auto">Whatever your trading style, strategy, or experience level – we've got you covered.</p>
+          <h1 className="font-display font-extrabold text-4xl md:text-5xl text-slate-900">An Investment Account for Every Goal</h1>
+          <p className="mt-4 text-slate-600 max-w-[900px] mx-auto">Whatever your investment goals or experience level, choose an account tailored to your needs.</p>
         </div>
 
         {/* Main tabs (Account Types / Copy Trading) */}
@@ -104,7 +104,7 @@ export default function TradingAccountTypesPage() {
 
             <div className="text-center mt-8">
               <Link href="#" className="text-slate-600 underline">
-                Show Full Information
+                View detailed comparison
               </Link>
             </div>
           </>
@@ -128,30 +128,30 @@ export default function TradingAccountTypesPage() {
 
             {/* Copier Account card (visible when Copiers tab active) */}
             {copyTab === 'copiers' ? (
-              <div className="max-w-[360px]">
+      <div className="max-w-[360px]">
                 <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
-                  <h3 className="font-display font-extrabold text-2xl text-slate-900 mb-2">COPIER ACCOUNT</h3>
-                  <p className="text-sm text-slate-600 mb-6">Spreads from<br/><span className="font-semibold text-slate-900">as low as 0.9 pips</span></p>
+        <h3 className="font-display font-extrabold text-2xl text-slate-900 mb-2">FOLLOWER ACCOUNT</h3>
+        <p className="text-sm text-slate-600 mb-6">Designed for investors who prefer to follow proven strategies.<br/><span className="font-semibold text-slate-900">Competitive spreads and systematic risk controls</span></p>
 
                   <div className="space-y-6 mb-6">
                     <div>
                       <p className="text-sm text-slate-600">Leverage</p>
-                      <p className="font-semibold text-slate-900">1:500 based on equity</p>
+                      <p className="font-semibold text-slate-900">Adaptive to account size and strategy</p>
                     </div>
 
                     <div>
                       <p className="text-sm text-slate-600">Promotions</p>
-                      <p className="font-semibold text-slate-900">✕</p>
+                      <p className="font-semibold text-slate-900">Eligible for select offers</p>
                     </div>
 
                     <div>
                       <p className="text-sm text-slate-600">Swap-Free*</p>
-                      <p className="font-semibold text-slate-900">✕</p>
+                      <p className="font-semibold text-slate-900">Available on request</p>
                     </div>
 
                     <div>
                       <p className="text-sm text-slate-600">Stop Out</p>
-                      <p className="font-semibold text-slate-900">20%</p>
+                      <p className="font-semibold text-slate-900">Managed per strategy risk rules</p>
                     </div>
 
                     <div className="flex items-center gap-3">

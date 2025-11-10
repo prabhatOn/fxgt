@@ -24,14 +24,14 @@ const VideoCta = () => {
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="lg:w-[70%] w-full text-center lg:text-left">
             <h2 className="font-display font-extrabold text-white text-[32px] lg:text-[40px] leading-tight tracking-[-0.02em] mb-4">
-              Get started with Fusion FX
+              Start your investment journey with Investmin
             </h2>
             <p className="font-body text-[#b3b3b3] text-lg mb-8">
-              Apply and start trading in minutes
+              Sign up and begin investing in minutes
             </p>
             <a
               href="/register"
-              className="inline-block bg-[#0f766e] hover:bg-[#0d6b63] text-white font-body font-semibold py-3.5 px-10 rounded-lg transition-colors text-base"
+              className="inline-block bg-slate-300 hover:bg-slate-400 text-slate-900 font-body font-semibold py-3.5 px-10 rounded-lg transition-colors text-base"
             >
               Register
             </a>

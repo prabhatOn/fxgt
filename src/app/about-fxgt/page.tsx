@@ -16,9 +16,9 @@ export default function AboutPage() {
         {/* Hero - matching the provided screenshot */}
         <section className="py-24">
           <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
-            <h1 className="text-5xl lg:text-6xl text-slate-900 font-display font-extrabold">The Ultimate Trading Choice</h1>
+            <h1 className="text-5xl lg:text-6xl text-slate-900 font-display font-extrabold">The Ultimate Investment Choice</h1>
             <p className="mt-6 text-xl lg:text-2xl text-slate-600 max-w-3xl mx-auto">
-              We created FXGT.com to reimagine the trader experience through our core principles of choice, access, and trust. We give you what you need, to be the trader you can.
+              We created Investmin to reimagine the investor experience through our core principles of choice, access, and trust. We give you what you need, to be the investor you can.
             </p>
           </div>
         </section>
@@ -26,7 +26,7 @@ export default function AboutPage() {
         {/* By the numbers - dark section */}
         <section className="bg-[#071011] text-white py-20" style={{ backgroundImage: `url('/newfxgt_com-by-the-numbers-1024x238.jpg.webp')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="mx-auto max-w-6xl px-6 lg:px-8 text-center">
-            <h2 className="text-4xl lg:text-5xl font-display font-extrabold">FXGT.com By The Numbers</h2>
+            <h2 className="text-4xl lg:text-5xl font-display font-extrabold">Investmin By The Numbers</h2>
             <p className="mt-4 text-lg text-slate-200">Our history and conditions speak for themselves.</p>
 
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
@@ -56,32 +56,32 @@ export default function AboutPage() {
         {/* Advantage / Four columns */}
         <section className="py-20">
           <div className="mx-auto max-w-6xl px-6 lg:px-8 text-center">
-            <h2 className="text-4xl lg:text-5xl font-display font-extrabold">The FXGT.com Advantage</h2>
-            <p className="mt-4 text-lg text-slate-600">What makes FXGT.com special? It’s a combination of factors.</p>
+            <h2 className="text-4xl lg:text-5xl font-display font-extrabold">The Investmin Advantage</h2>
+            <p className="mt-4 text-lg text-slate-600">What makes Investmin special? It's a combination of factors.</p>
 
             <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-left">
               <div className="flex flex-col items-center">
                 <Image src="/a-broker-for-you.webp" alt="Dynamic Account Types" width={120} height={120} />
                 <h3 className="mt-6 text-2xl font-semibold">Dynamic Account Types</h3>
-                <p className="mt-3 text-slate-600 max-w-[260px]">Choose from our Mini, Standard, ECN, PRO, and Optimus accounts, each tailored for different trading styles.</p>
+                <p className="mt-3 text-slate-600 max-w-[260px]">Choose from our Starter, Standard, Elite, Professional, and Premium accounts, each tailored for different investment styles.</p>
               </div>
 
               <div className="flex flex-col items-center">
-                <Image src="/powerful-trading-platforms.webp" alt="Superior Trading Conditions" width={120} height={120} />
-                <h3 className="mt-6 text-2xl font-semibold">Superior Trading Conditions</h3>
-                <p className="mt-3 text-slate-600 max-w-[260px]">Benefit from accounts with zero commissions, spreads from 0.0 pips, and swap-free trading options.</p>
+                <Image src="/powerful-trading-platforms.webp" alt="Superior Investment Conditions" width={120} height={120} />
+                <h3 className="mt-6 text-2xl font-semibold">Superior Investment Conditions</h3>
+                <p className="mt-3 text-slate-600 max-w-[260px]">Benefit from accounts with zero commissions, spreads from 0.0 pips, and swap-free investment options.</p>
               </div>
 
               <div className="flex flex-col items-center">
-                <Image src="/a-broker-for-you.webp" alt="Powerful Trading Platforms" width={120} height={120} />
-                <h3 className="mt-6 text-2xl font-semibold">Powerful Trading Platforms</h3>
-                <p className="mt-3 text-slate-600 max-w-[260px]">Trade on the industry-leading MT4 and MT5 platforms, enhanced with an advanced toolkit for analysis and execution.</p>
+                <Image src="/a-broker-for-you.webp" alt="Powerful Investment Platforms" width={120} height={120} />
+                <h3 className="mt-6 text-2xl font-semibold">Powerful Investment Platforms</h3>
+                <p className="mt-3 text-slate-600 max-w-[260px]">Invest on the industry-leading MT4 and MT5 platforms, enhanced with an advanced toolkit for analysis and execution.</p>
               </div>
 
               <div className="flex flex-col items-center">
-                <Image src="/wallet.webp" alt="A Broker for You" width={120} height={120} />
-                <h3 className="mt-6 text-2xl font-semibold">A Broker for You</h3>
-                <p className="mt-3 text-slate-600 max-w-[260px]">Whether you are a beginner trading micro-lots or a professional executing complex strategies, we have an account for you.</p>
+                <Image src="/wallet.webp" alt="A Platform for You" width={120} height={120} />
+                <h3 className="mt-6 text-2xl font-semibold">A Platform for You</h3>
+                <p className="mt-3 text-slate-600 max-w-[260px]">Whether you are a beginner investing micro-lots or a professional executing complex strategies, we have an account for you.</p>
               </div>
             </div>
           </div>
@@ -123,9 +123,6 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-
-        {/* Awards / recognition */}
-        <AwardsShowcase />
       </main>
 
       <Footer />

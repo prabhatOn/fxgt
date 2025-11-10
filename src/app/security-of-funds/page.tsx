@@ -19,8 +19,8 @@ export default function SecurityOfFundsPage() {
           />
 
           <div className="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold">Secure Your Funds with Confidence</h1>
-            <p className="mt-4 text-lg text-white/80">Safeguarding your investments</p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold">Secure Your Investments with Confidence</h1>
+            <p className="mt-4 text-lg text-white/80">Safeguarding your capital with the highest security standards</p>
 
             {/* Visual with floating labels - represented as decorative boxes over image */}
             <div className="mt-12 relative">
@@ -49,7 +49,7 @@ export default function SecurityOfFundsPage() {
               </svg>
             </div>
 
-            <p className="text-xl text-slate-700 max-w-3xl mx-auto">FXGT.com is PCI DSS certified, meaning we adhere to a strict set of security requirements, designed to protect cardholder data and prevent unauthorized access.</p>
+            <p className="text-xl text-slate-700 max-w-3xl mx-auto">Investmin is PCI DSS certified, meaning we adhere to a strict set of security requirements, designed to protect cardholder data and prevent unauthorized access.</p>
           </div>
         </section>
 
@@ -64,7 +64,7 @@ export default function SecurityOfFundsPage() {
 
               <div className="bg-white rounded-xl p-8 shadow-sm">
                 <h3 className="text-lg text-slate-900 font-semibold mb-2">Data Security</h3>
-                <p className="text-slate-600">Our advanced encryption technology means we can ensure the maximum security of your data. Your details, trading profile and activities are stored on secure servers, protected by strong firewalls, while data transmission is encrypted to prevent data theft and unauthorized third-party access.</p>
+                <p className="text-slate-600">Our advanced encryption technology means we can ensure the maximum security of your data. Your details, investment profile and activities are stored on secure servers, protected by strong firewalls, while data transmission is encrypted to prevent data theft and unauthorized third-party access.</p>
               </div>
 
               <div className="bg-white rounded-xl p-8 shadow-sm">
@@ -74,12 +74,12 @@ export default function SecurityOfFundsPage() {
 
               <div className="bg-white rounded-xl p-8 shadow-sm">
                 <h3 className="text-lg text-slate-900 font-semibold mb-2">Negative Balance Protection</h3>
-                <p className="text-slate-600">We offer negative balance protection, which means you cannot lose more than what you have deposited into your live trading accounts. Therefore, your account balance cannot fall into deficit.</p>
+                <p className="text-slate-600">We offer negative balance protection, which means you cannot lose more than what you have deposited into your investment accounts. Therefore, your account balance cannot fall into deficit.</p>
               </div>
 
               <div className="bg-white rounded-xl p-8 shadow-sm">
                 <h3 className="text-lg text-slate-900 font-semibold mb-2">Risk Management</h3>
-                <p className="text-slate-600">We have put in place a range of policies and procedures to ensure that your trading activities are safeguarded against certain risks. Your funds are also kept in Tier 1 financial institutions and are constantly monitored, to effectively identify and limit potential risks.</p>
+                <p className="text-slate-600">We have put in place a range of policies and procedures to ensure that your investment activities are safeguarded against certain risks. Your funds are also kept in Tier 1 financial institutions and are constantly monitored, to effectively identify and limit potential risks.</p>
               </div>
 
               <div className="bg-white rounded-xl p-8 shadow-sm">
@@ -89,7 +89,7 @@ export default function SecurityOfFundsPage() {
 
               <div className="bg-white rounded-xl p-8 shadow-sm">
                 <h3 className="text-lg text-slate-900 font-semibold mb-2">Regulation</h3>
-                <p className="text-slate-600">We are a fully regulated broker, adhering to all regulatory standards and a high level of capital adequacy ratio at all times.</p>
+                <p className="text-slate-600">We are a fully regulated investment platform, adhering to all regulatory standards and a high level of capital adequacy ratio at all times.</p>
 
                 <div className="mt-4 text-sm text-slate-500">
                   CT Global Ltd is a registered company in Seychelles, with Registration Number 8421720-1. It is regulated by the Seychelles Financial Services Authority (SFSA) under the Securities Dealer's License Number SD019.
@@ -105,7 +105,7 @@ export default function SecurityOfFundsPage() {
               <div className="bg-white rounded-xl p-8 shadow-sm">
                 <h3 className="text-lg text-slate-900 font-semibold mb-2">Liability Insurance</h3>
                 <p className="text-slate-600">Our clients are insured up to a total of €1,000,000. This insurance includes market coverage to secure liabilities against clients and other third parties against: errors, omissions, negligence, or other risks that may result in financial loss.</p>
-                <p className="mt-4 text-sm"><a href="#" className="text-[#0f766e] underline">View Certificate</a></p>
+                <p className="mt-4 text-sm"><a href="#" className="text-slate-700 hover:text-slate-900">View Certificate</a></p>
               </div>
             </div>
           </div>

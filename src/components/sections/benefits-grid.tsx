@@ -7,28 +7,28 @@ interface BenefitCardProps {
 
 const benefitsData: BenefitCardProps[] = [
   {
-    title: "Diverse Account Types",
-    description: "Match your strategy and costs",
+    title: "Multiple Account Options",
+    description: "Choose the account that fits your goals",
   },
   {
-    title: "Copy Trading",
-    description: "Copy top strategies on your terms",
+    title: "Smart Copy Trading",
+    description: "Follow successful strategies automatically",
   },
   {
-    title: "Rewards",
-    description: "Earn more on every trade",
+    title: "Attractive Rewards",
+    description: "Benefit from every investment",
   },
   {
-    title: "Mobile App",
-    description: "Seamless, intuitive trading experience",
+    title: "Mobile Platform",
+    description: "Invest anywhere, anytime with ease",
   },
   {
-    title: "10+ industry awards",
-    description: "Acknowledged, rewarded, and respected",
+    title: "Industry Recognition",
+    description: "Trusted and recognized platform",
   },
   {
-    title: "$1,000,000",
-    description: "In liability insurance for all clients",
+    title: "Secure Platform",
+    description: "Your investments protected with insurance",
   },
 ];
 

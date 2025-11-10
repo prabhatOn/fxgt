@@ -4,8 +4,8 @@ import NavigationHeader from "@/components/sections/navigation-header";
 import Footer from "@/components/sections/footer";
 
 export const metadata = {
-  title: "Client Portal — FXGT",
-  description: "Total control of your money, all in one place — manage eWallets, accounts, deposits and withdrawals from the FXGT Client Portal.",
+  title: "Client Portal — Investmin",
+  description: "Total control of your money, all in one place — manage eWallets, accounts, deposits and withdrawals from the Investmin Client Portal.",
 };
 
 export default function ClientPortalPage() {
@@ -13,22 +13,22 @@ export default function ClientPortalPage() {
     {
       title: "eWallets",
       description:
-        "Store and manage multiple currencies across different secure eWallets. Enjoy real-time visibility and ironclad security.",
+        "Store and manage multiple currencies across different secure eWallets. Enjoy real-time visibility and robust security.",
     },
     {
       title: "Accounts",
       description:
-        "Open demo or live trading accounts in multiple currencies. Enjoy flexibility and convenience.",
+        "Open demo or live investment accounts in multiple currencies. Enjoy flexibility and convenience.",
     },
     {
       title: "Deposits",
       description:
-        "Fund your Trading Account instantly, anytime. No hassle, no waiting, no fees.",
+        "Fund your Investment Account instantly, anytime. No hassle, no waiting, no fees.",
     },
     {
       title: "Withdrawals",
       description:
-        "Withdraw funds 24/7 from any Trading Account or eWallet.",
+        "Withdraw funds 24/7 from any Investment Account or eWallet.",
     },
   ];
 
@@ -91,17 +91,17 @@ export default function ClientPortalPage() {
           {/* Overlay decorative cards on the left to match the screenshot */}
           <div className="absolute left-6 top-44 lg:top-36 transform -translate-y-0 flex flex-col gap-6 w-[86%] max-w-[520px] lg:max-w-[580px] lg:left-24 pointer-events-none z-20">
             <div className="rounded-2xl bg-gradient-to-r from-slate-900/40 to-slate-800/20 backdrop-blur-md border border-white/10 px-8 py-8 shadow-2xl">
-              <h3 className="text-2xl font-semibold text-teal-400">Manage Your Funds</h3>
+              <h3 className="text-2xl font-semibold text-slate-300">Manage Your Funds</h3>
               <ul className="mt-4 text-white/80 space-y-4">
-                <li>Deposit multiple currencies directly into your Trading Account</li>
+                <li>Deposit multiple currencies directly into your Investment Account</li>
                 <li>Instantly view all your balances</li>
-                <li>Withdraw funds directly from your eWallets or Trading Account</li>
+                <li>Withdraw funds directly from your eWallets or Investment Account</li>
               </ul>
             </div>
 
             <div className="rounded-2xl bg-gradient-to-r from-slate-900/30 to-slate-800/10 backdrop-blur-md border border-white/8 px-8 py-6 shadow-lg flex items-center justify-between">
               <div>
-                <h4 className="text-xl font-semibold text-white">Manage Your Trading Accounts</h4>
+                <h4 className="text-xl font-semibold text-white">Manage Your Investment Accounts</h4>
                 <p className="text-white/70 mt-2">Open and manage demo or live accounts with ease.</p>
               </div>
               <div className="text-white/90 text-2xl">➜</div>
@@ -128,11 +128,11 @@ export default function ClientPortalPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="rounded-2xl border border-slate-100 p-8 shadow-sm">
               <h3 className="text-2xl font-semibold">Ready to manage your funds?</h3>
-              <p className="mt-3 text-slate-600">Sign in to your FXGT client portal to view balances, deposit, withdraw and manage accounts.</p>
+              <p className="mt-3 text-slate-600">Sign in to your Investmin client portal to view balances, deposit, withdraw and manage accounts.</p>
 
               <div className="mt-6 flex gap-4">
-                <Link href="/log-in/" className="inline-block rounded-md bg-[#0f766e] px-6 py-3 text-white font-semibold hover:bg-[#0e665f]">Log In</Link>
-                <Link href="/register/" className="inline-block rounded-md border border-slate-200 px-6 py-3 text-slate-800 font-semibold">Register</Link>
+                <Link href="/log-in/" className="inline-block rounded-md bg-slate-300 px-6 py-3 text-slate-900 font-semibold hover:bg-slate-400">Log In</Link>
+                <Link href="/register/" className="inline-block rounded-md border border-slate-200 px-6 py-3 text-slate-800 font-semibold hover:bg-slate-50">Register</Link>
               </div>
             </div>
           </div>

@@ -52,10 +52,10 @@ const SpreadsTable: React.FC = () => {
     <section className="w-full bg-[#0b0b0b] text-white py-20">
       <div className="mx-auto max-w-[1200px] px-6 text-center">
         <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-          Trade with 1:5000 Leverage
+          Invest with up to 1:2000 Leverage
         </h2>
         <p className="mt-4 text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
-          Choose the asset class that fits your portfolio and trade seamlessly.
+          Choose the asset class that fits your investment strategy and portfolio goals.
         </p>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">

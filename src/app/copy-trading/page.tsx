@@ -6,8 +6,8 @@ import CopyTradingSection from "@/components/sections/copy-trading";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 export const metadata = {
-  title: "Copy Trading — FXGT",
-  description: "Copy Trading — mirror top traders or share your strategies with Fusion FX's Copy Trading platform.",
+  title: "Copy Trading — Investmin",
+  description: "Copy Trading — mirror top investors or share your strategies with Investmin's Copy Trading platform.",
 };
 
 export default function CopyTradingPage() {
@@ -48,15 +48,15 @@ export default function CopyTradingPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 py-24">
               <div className="z-10">
-                <h1 className="font-display text-5xl md:text-6xl font-extrabold tracking-tight">Copy Trading</h1>
+                <h1 className="font-display text-5xl md:text-6xl font-extrabold tracking-tight">Smart Copy Investing</h1>
                 <h2 className="mt-4 text-3xl md:text-4xl font-medium text-white/95">Empowering Every Investor</h2>
                 <p className="mt-6 max-w-2xl text-lg text-white/80 leading-relaxed">
-                  Seamlessly connect, follow, or lead — experience a new era of collaborative trading with real-time results.
+                  Seamlessly connect, follow proven investors, or share your strategies — experience collaborative investing with real-time results.
                 </p>
 
                 <div className="mt-10">
-                  <Link href="/register/" className="inline-block rounded-md bg-[#0f766e] px-8 py-3.5 text-base font-semibold text-white hover:bg-[#0e665f]">
-                    Start Copy Trading
+                  <Link href="/register/" className="inline-block rounded-md bg-slate-300 px-8 py-3.5 text-base font-semibold text-slate-900 hover:bg-slate-400">
+                    Start Copy Investing
                   </Link>
                 </div>
               </div>
@@ -82,47 +82,47 @@ export default function CopyTradingPage() {
         {/* Features grid (cards) - reuse the section component beneath for details */}
         <section className="bg-white py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h3 className="text-center text-3xl font-display font-bold text-slate-900">Why Choose Copy Trading?</h3>
-            <p className="mt-4 text-center text-slate-600 max-w-3xl mx-auto">Discover a smarter, faster way to invest—whether you’re seeking expertise or sharing your own.</p>
+            <h3 className="text-center text-3xl font-display font-bold text-slate-900">Why Choose Copy Investing?</h3>
+            <p className="mt-4 text-center text-slate-600 max-w-3xl mx-auto">Discover a smarter, faster way to invest — whether you're following proven strategies or sharing your own success.</p>
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="rounded-2xl border border-slate-100 p-6 shadow-sm bg-white">
-                <div className="mb-4 inline-flex items-center justify-center rounded-full bg-[#e6f7f5] h-12 w-12">
+                <div className="mb-4 inline-flex items-center justify-center rounded-full bg-slate-100 h-12 w-12">
                   {/* decorative icon */}
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-[#0f766e]" xmlns="http://www.w3.org/2000/svg"><path d="M6 2v4" stroke="#0f766e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M6 8h0" stroke="#0f766e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-slate-700" xmlns="http://www.w3.org/2000/svg"><path d="M6 2v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M6 8h0" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
                 <h4 className="text-xl font-display font-bold mb-2">Real-Time Synchronization</h4>
-                <p className="text-sm text-slate-600">Instantly mirror trades and strategies as they happen, with no delays.</p>
+                <p className="text-sm text-slate-600">Instantly mirror investments and strategies as they happen, with no delays.</p>
               </div>
 
               <div className="rounded-2xl border border-slate-100 p-6 shadow-sm bg-white">
-                <div className="mb-4 inline-flex items-center justify-center rounded-full bg-[#e6f7f5] h-12 w-12">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2v6" stroke="#0f766e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <div className="mb-4 inline-flex items-center justify-center rounded-full bg-slate-100 h-12 w-12">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-slate-700"><path d="M12 2v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
                 <h4 className="text-xl font-display font-bold mb-2">Beginner-Friendly Platform</h4>
-                <p className="text-sm text-slate-600">Start investing with confidence, even if you’re new or short on time.</p>
+                <p className="text-sm text-slate-600">Start your investment journey with confidence, even if you're new or short on time.</p>
               </div>
 
               <div className="rounded-2xl border border-slate-100 p-6 shadow-sm bg-white">
-                <div className="mb-4 inline-flex items-center justify-center rounded-full bg-[#e6f7f5] h-12 w-12">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12h18" stroke="#0f766e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <div className="mb-4 inline-flex items-center justify-center rounded-full bg-slate-100 h-12 w-12">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-slate-700"><path d="M3 12h18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
                 <h4 className="text-xl font-display font-bold mb-2">Flexible Roles, Maximum Control</h4>
-                <p className="text-sm text-slate-600">Switch between Copier and Strategy Provider, or manage both—tailor your trading journey.</p>
+                <p className="text-sm text-slate-600">Switch between Follower and Strategy Provider, or manage both — tailor your investment journey.</p>
               </div>
 
               <div className="rounded-2xl border border-slate-100 p-6 shadow-sm bg-white">
-                <div className="mb-4 inline-flex items-center justify-center rounded-full bg-[#e6f7f5] h-12 w-12">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 6v6l4 2" stroke="#0f766e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <div className="mb-4 inline-flex items-center justify-center rounded-full bg-slate-100 h-12 w-12">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-slate-700"><path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
                 <h4 className="text-xl font-display font-bold mb-2">Performance Visibility</h4>
-                <p className="text-sm text-slate-600">Access detailed strategy histories and set risk controls for peace of mind.</p>
+                <p className="text-sm text-slate-600">Access detailed strategy histories and set risk controls for complete peace of mind.</p>
               </div>
             </div>
 
             <div className="mt-10 text-center">
-              <Link href="/register/" className="inline-block rounded-lg bg-[#0f766e] px-8 py-3.5 text-base font-semibold text-white hover:bg-[#0e665f]">
-                Start Copy Trading
+              <Link href="/register/" className="inline-block rounded-lg bg-slate-300 px-8 py-3.5 text-base font-semibold text-slate-900 hover:bg-slate-400">
+                Start Copy Investing
               </Link>
             </div>
           </div>

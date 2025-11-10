@@ -57,13 +57,13 @@ const tradingLinks = {
 
 const platformsLinks = {
   fusionFx: [
-    { title: "Fusion FX App", href: "/fxgt-app/" },
-    { title: "Fusion FX Trader", href: "/fxgt-trader/" },
+    { title: "Investmin App", href: "/fxgt-app/" },
+    { title: "Investmin Trader", href: "/fxgt-trader/" },
   ],
 };
 
 const companyLinks = [
-  { title: "About Fusion FX", href: "/about-fxgt/" },
+  { title: "About Investmin", href: "/about-fxgt/" },
   { title: "Security of Funds", href: "/security-of-funds/" },
   { title: "Contact Us", href: "/contact/" },
   { title: "Legal", href: "/legal/" },
@@ -107,7 +107,7 @@ export default function NavigationHeader() {
   const pathname = usePathname();
 
   const fullDropdownClasses =
-    "!fixed !left-0 !top-16 !bg-white !w-full h-[50vh] border-t border-gray-100 shadow-xl !p-0 overflow-y-auto !z-50 !mt-0";
+    "!fixed !left-0 !top-19 !bg-white !w-full h-[50vh] border-t border-gray-100 shadow-xl !p-0 overflow-y-auto !z-50 !mt-0";
 
   const triggerBase =
     "group inline-flex h-full items-center px-5 text-sm font-medium text-slate-900 rounded-none bg-transparent hover:bg-gray-50 data-[state=open]:bg-gray-50 transition-colors";
@@ -135,13 +135,13 @@ export default function NavigationHeader() {
         }
       `}</style>
       <header className="sticky top-0 z-40 bg-white border-b border-gray-200">
-        <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-4 lg:px-8">
+        <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-4 lg:px-8">
         <Link href="/" className="flex items-center relative z-50">
           <Image
-            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/fxgt-logo_png-1.webp"
+            src="/icon.png"
             width={108}
             height={24}
-            alt="FXGT Logo"
+            alt="investmin Logo"
           />
         </Link>
 
@@ -187,7 +187,7 @@ export default function NavigationHeader() {
               <NavigationMenuContent className={fullDropdownClasses} style={{ position: 'fixed', left: 0, top: '64px', width: '100vw', backgroundColor: 'white' }}>
                 <div className="mx-auto max-w-6xl h-full grid grid-cols-3 gap-20 px-10 py-12">
                   <MenuColumn
-                    title="Fusion FX Platforms"
+                    title="Investmin Platforms"
                     links={platformsLinks.fusionFx}
                   />
                 </div>
@@ -233,14 +233,14 @@ export default function NavigationHeader() {
           <Button
             variant="outline"
             asChild
-            className="rounded-full border-[#0f766e] text-[#0f766e] font-semibold bg-transparent shadow-none hover:bg-[#0f766e]/10"
+            className="rounded-full border-slate-900 text-slate-500 font-semibold bg-transparent shadow-none hover:bg-slate-800"
           >
             <Link href="/log-in/">Log In</Link>
           </Button>
 
           <Button
             asChild
-            className="rounded-full bg-[#0f766e] text-white font-semibold hover:bg-[#0e665f]"
+            className="rounded-full bg-slate-800 text-white font-semibold hover:bg-slate-800"
           >
             <Link href="/register/">Register Now</Link>
           </Button>

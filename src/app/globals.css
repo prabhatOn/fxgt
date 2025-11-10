@@ -21,8 +21,8 @@
   --color-popover: #1a1a1a;
   --color-popover-foreground: #ffffff;
 
-  --color-primary: #17a499;
-  --color-primary-foreground: #ffffff;
+  --color-primary: #cbd5e1;
+  --color-primary-foreground: #0f172a;
 
   --color-secondary: #2d2d2d;
   --color-secondary-foreground: #e0e0e0;
@@ -30,15 +30,15 @@
   --color-muted: #2d2d2d;
   --color-muted-foreground: #999999;
 
-  --color-accent: #17a499;
-  --color-accent-foreground: #ffffff;
+  --color-accent: #e2e8f0;
+  --color-accent-foreground: #0f172a;
 
   --color-destructive: #ff3b3b;
   --color-destructive-foreground: #ffffff;
 
   --color-border: #333333;
   --color-input: #444444;
-  --color-ring: #17a499;
+  --color-ring: #94a3b8;
 
   --color-chart-1: #e67e22;
   --color-chart-2: #2d8659;
@@ -48,12 +48,12 @@
 
   --color-sidebar: #1a1a1a;
   --color-sidebar-foreground: #f0f0f0;
-  --color-sidebar-primary: #17a499;
-  --color-sidebar-primary-foreground: #ffffff;
+  --color-sidebar-primary: #cbd5e1;
+  --color-sidebar-primary-foreground: #0f172a;
   --color-sidebar-accent: #2d2d2d;
   --color-sidebar-accent-foreground: #f0f0f0;
   --color-sidebar-border: #333333;
-  --color-sidebar-ring: #17a499;
+  --color-sidebar-ring: #94a3b8;
 
   --radius-lg: 0.5rem;
   --radius-md: calc(0.5rem - 2px);
@@ -80,9 +80,9 @@
   }
 
   /* Custom Design Tokens */
-  --color-brand-teal: #17a499;
-  --color-brand-teal-secondary: #00a99d;
-  --color-brand-teal-hover: #1cb5a8;
+  --color-brand-teal: #cbd5e1;
+  --color-brand-teal-secondary: #94a3b8;
+  --color-brand-teal-hover: #e2e8f0;
 
   --color-dark-gray-bg: #1a1a1a;
   --color-medium-gray-bg: #2d2d2d;

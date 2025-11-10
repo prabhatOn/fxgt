@@ -6,15 +6,15 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 export const metadata = {
-  title: "FXGT Trader — FXGT",
-  description: "Access global markets from your browser with FXGT.com Trader. Powerful charts, advanced tools and fast execution.",
+  title: "Investmin Trader — Investmin",
+  description: "Access global markets from your browser with Investmin Trader. Powerful charts, advanced tools and fast execution.",
 };
 
 const features = [
   {
     title: "Account management",
     description:
-      "Manage all your FXGT.com accounts in separate browser windows. Execute different market strategies at the same time.",
+      "Manage all your Investmin accounts in separate browser windows. Execute different market strategies at the same time.",
     icon: "/wallet.webp",
   },
   {
@@ -32,17 +32,17 @@ const features = [
   {
     title: "Top-level Security and Privacy",
     description:
-      "Trade with peace of mind on a platform secured by industry leading protection, including end-to-end encryption.",
+      "Invest with peace of mind on a platform secured by industry leading protection, including end-to-end encryption.",
     icon: "/file.svg",
   },
 ];
 
 const faqs = [
-  { q: "Do I need an MT5 trading account to access FXGT.com Trader?", a: "No — FXGT.com Trader works with supported FXGT accounts. You can access it via your client portal and trade directly from the browser." },
-  { q: "How do I login to the FXGT Trader platform?", a: "Open the Trader from your client portal and sign in with your FXGT credentials. Follow the prompts for account linking if required." },
+  { q: "Do I need an MT5 trading account to access Investmin Trader?", a: "No — Investmin Trader works with supported Investmin accounts. You can access it via your client portal and invest directly from the browser." },
+  { q: "How do I login to the Investmin Trader platform?", a: "Open the Trader from your client portal and sign in with your Investmin credentials. Follow the prompts for account linking if required." },
   { q: "Are these charting tools free?", a: "Core charting and drawing tools are provided free; advanced premium indicators may require additional subscriptions depending on third-party terms." },
-  { q: "What order types are available on FXGT.com Trader?", a: "Market, limit, stop, stop-limit, trailing stop and One-Click orders are available depending on instrument and account type." },
-  { q: "Can I save my chart settings for future trading sessions?", a: "Yes — chart layouts, indicators and timeframes are saved for your account so you get your workspace back every time." },
+  { q: "What order types are available on Investmin Trader?", a: "Market, limit, stop, stop-limit, trailing stop and One-Click orders are available depending on instrument and account type." },
+  { q: "Can I save my chart settings for future investment sessions?", a: "Yes — chart layouts, indicators and timeframes are saved for your account so you get your workspace back every time." },
 ];
 
 export default function FxgtTraderPage() {
@@ -61,14 +61,14 @@ export default function FxgtTraderPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 py-28">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="max-w-lg text-white">
-                <h1 className="text-4xl lg:text-5xl font-display font-bold">FXGT.com Trader</h1>
+                <h1 className="text-4xl lg:text-5xl font-display font-bold">Investmin Trader</h1>
                 <p className="mt-6 text-lg text-slate-200">
-                  Access global markets from your web browser and trade with powerful features across a wide range of financial instruments.
+                  Access global markets from your web browser and invest with powerful features across a wide range of financial instruments.
                 </p>
 
                 <div className="mt-8">
                   <Link href="/client-portal/" className="inline-block">
-                    <Button className="rounded-md bg-[#0f766e] text-white px-6 py-3 font-semibold hover:bg-[#0e665f]">Trade Now</Button>
+                    <Button className="rounded-md bg-slate-300 text-slate-900 px-6 py-3 font-semibold hover:bg-slate-400">Start Investing</Button>
                   </Link>
                 </div>
               </div>
@@ -82,8 +82,8 @@ export default function FxgtTraderPage() {
         {/* Trade confidently section */}
         <section className="py-20 bg-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-bold text-slate-900">Trade confidently</h2>
-            <p className="mt-3 text-slate-600">Experience full trading control with FXGT.com Trader</p>
+            <h2 className="text-4xl font-bold text-slate-900">Invest confidently</h2>
+            <p className="mt-3 text-slate-600">Experience full investment control with Investmin Trader</p>
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {features.map((f, i) => (
@@ -100,7 +100,7 @@ export default function FxgtTraderPage() {
             </div>
 
             <div className="mt-10">
-              <Button asChild className="rounded-md bg-[#0f766e] text-white px-6 py-3 font-semibold hover:bg-[#0e665f]">
+              <Button asChild className="rounded-md bg-slate-300 text-slate-900 px-6 py-3 font-semibold hover:bg-slate-400">
                 <Link href="/client-portal/">Get Started</Link>
               </Button>
             </div>
@@ -110,8 +110,8 @@ export default function FxgtTraderPage() {
         <section className="py-20 bg-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-4xl font-bold text-slate-900">Trade Easily</h3>
-              <p className="mt-4 text-slate-600">Enjoy effortless market access and take advantage of our integration with TradingView’s advanced charting capabilities.</p>
+              <h3 className="text-4xl font-bold text-slate-900">Invest Easily</h3>
+              <p className="mt-4 text-slate-600">Enjoy effortless market access and take advantage of our integration with TradingView's advanced charting capabilities.</p>
 
               <ul className="mt-8 space-y-6">
                 <li>
@@ -120,11 +120,11 @@ export default function FxgtTraderPage() {
                 </li>
                 <li>
                   <h4 className="font-semibold text-slate-900">Chart auto-save:</h4>
-                  <p className="text-slate-600">Your last timeframe, indicators, and chart styles are loaded every time you get back to trading.</p>
+                  <p className="text-slate-600">Your last timeframe, indicators, and chart styles are loaded every time you get back to investing.</p>
                 </li>
                 <li>
                   <h4 className="font-semibold text-slate-900">Easy customization:</h4>
-                  <p className="text-slate-600">Switch between timeframes, bar styles, chart colors, text, and gridlines for a personalized trading setup.</p>
+                  <p className="text-slate-600">Switch between timeframes, bar styles, chart colors, text, and gridlines for a personalized investment setup.</p>
                 </li>
               </ul>
 

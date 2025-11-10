@@ -9,42 +9,42 @@ type Award = {
 const awardsData: Award[] = [
   {
     imgSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/winner-awards_png-17.webp",
-    title: "BEST TRADING ENVIRONMENT",
+    title: "BEST INVESTMENT PLATFORM",
     year: "2025",
   },
   {
     imgSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/UFA1_png-19.webp",
-    title: "BEST TRADING CONDITIONS APAC",
+    title: "BEST INVESTMENT CONDITIONS APAC",
     year: "2024",
   },
   {
     imgSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/UFA1_png-19.webp",
-    title: "MOST INNOVATIVE BROKER",
+    title: "MOST INNOVATIVE PLATFORM",
     year: "2024",
   },
   {
     imgSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/brokersview-award-20.webp",
-    title: "BEST GLOBAL TRADING CONDITIONS",
+    title: "BEST GLOBAL INVESTMENT CONDITIONS",
     year: "2024",
   },
   {
     imgSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/brokersview-award-20.webp",
-    title: "BEST GLOBAL CFD BROKER",
+    title: "BEST GLOBAL INVESTMENT PLATFORM",
     year: "2024",
   },
   {
     imgSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/brokersview-award-20.webp",
-    title: "BEST GLOBAL IB/AFFILIATE PROGRAM",
+    title: "BEST PARTNER PROGRAM",
     year: "2024",
   },
   {
     imgSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/Atoz1_png-21.webp",
-    title: "BEST BROKER",
+    title: "BEST INVESTMENT PLATFORM",
     year: "2023",
   },
   {
     imgSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/UFA1_png-19.webp",
-    title: "BEST HYBRID BROKER",
+    title: "BEST HYBRID PLATFORM",
     year: "2022",
   },
 ];
@@ -73,10 +73,10 @@ export default function AwardsShowcase() {
       <div className="mx-auto max-w-[1400px] px-8 py-12 md:py-16 lg:py-20">
         <div className="mb-12 text-center">
           <h2 className="font-display text-[2rem] font-extrabold tracking-[-0.02em] text-[#1a1a1a] md:text-[2.25rem] lg:text-[2.75rem]">
-            Globally recognized excellence
+            Trusted and recognized globally
           </h2>
           <p className="font-body mx-auto mt-4 max-w-[900px] text-[1.125rem] leading-[1.6] text-[#666666]">
-            Our commitment to offering the best trading experience continues to earn recognition from leading industry authorities.
+            Our commitment to providing exceptional investment services continues to earn recognition from leading industry authorities worldwide.
           </p>
         </div>
         <div className="-mx-8">

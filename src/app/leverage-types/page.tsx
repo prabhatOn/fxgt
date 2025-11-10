@@ -5,8 +5,8 @@ import Footer from "@/components/sections/footer";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 export const metadata = {
-  title: "Leverage & Margin — FXGT",
-  description: "Learn about leverage types, equity & volume leverage and margin requirements.",
+  title: "Leverage & Margin — Investmin",
+  description: "Learn about leverage types, equity & volume leverage and margin requirements at Investmin.",
 };
 
 export default function LeveragePage() {
@@ -18,22 +18,20 @@ export default function LeveragePage() {
         {/* Hero / Leverage Types */}
         <section className="mx-auto max-w-6xl px-6 py-24 md:py-32 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div>
-            <h1 className="font-display text-slate-900 text-5xl md:text-6xl font-bold">Leverage Types</h1>
-            <p className="mt-6 max-w-2xl text-lg text-slate-600">
-              Flexible Leverage up to 1:5000
-            </p>
+            <h1 className="font-display text-slate-900 text-5xl md:text-6xl font-bold">Leverage & Margin</h1>
+            <p className="mt-6 max-w-2xl text-lg text-slate-600">Flexible leverage options up to 1:5000 — choose the exposure that fits your strategy.</p>
 
-            <h3 className="mt-8 text-2xl text-slate-600 font-medium">Ready to trade big with a small starting capital?</h3>
+            <h3 className="mt-8 text-2xl text-slate-600 font-medium">Manage exposure with smarter margin and leverage</h3>
 
             <p className="mt-4 text-slate-600 max-w-2xl">
-              FXGT has you covered. Our leverage model features dynamic <strong>equity-based</strong> leverage,
-              tailored to enhance your trading experience. You can take advantage of equity-based leverage,
-              which is a fixed ratio of equity to capital that affects margin required for an open order.
+              Investmin provides flexible leverage models including <strong>equity-based</strong> leverage. These settings
+              adjust allowed exposure depending on account equity and influence the margin required for opened positions.
+              Use leverage responsibly — it can magnify gains and losses.
             </p>
 
             <div className="mt-8">
-              <Link href="/register/" className="inline-block rounded-md bg-[#0f766e] text-white px-6 py-3 font-semibold hover:bg-[#0e665f]">
-                Register
+              <Link href="/register/" className="inline-block rounded-md bg-slate-300 text-slate-900 px-6 py-3 font-semibold hover:bg-slate-400">
+                Open account
               </Link>
             </div>
           </div>
@@ -72,12 +70,12 @@ export default function LeveragePage() {
                   </thead>
                   <tbody className="text-slate-100">
                     {[
-                      ["OPTIMUS Fx Majors/Minors", "1:5000", "1:2000", "1:1000", "1:500", "1:200", "1:100", "1:50"],
-                      ["OPTIMUS Precious Metals", "", "1:2000", "1:1000", "1:500", "1:200", "1:100", "1:50"],
-                      ["STD Fx Majors/Minors & Precious Metals", "", "", "1:1000", "1:500", "1:200", "1:100", "1:50"],
-                      ["MINI Fx Majors/Minors & Precious Metals", "", "", "1:1000", "1:500", "1:200", "1:100", "1:50"],
-                      ["PRO Fx Majors/Minors & Precious Metals", "", "", "1:1000", "1:500", "1:200", "1:100", "1:50"],
-                      ["ECN Fx Majors/Minors & Precious Metals", "", "", "1:1000", "1:500", "1:200", "1:100", "1:50"],
+                      ["PREMIUM Fx Majors/Minors", "1:5000", "1:2000", "1:1000", "1:500", "1:200", "1:100", "1:50"],
+                      ["PREMIUM Precious Metals", "", "1:2000", "1:1000", "1:500", "1:200", "1:100", "1:50"],
+                      ["STANDARD Fx Majors/Minors & Precious Metals", "", "", "1:1000", "1:500", "1:200", "1:100", "1:50"],
+                      ["STARTER Fx Majors/Minors & Precious Metals", "", "", "1:1000", "1:500", "1:200", "1:100", "1:50"],
+                      ["PROFESSIONAL Fx Majors/Minors & Precious Metals", "", "", "1:1000", "1:500", "1:200", "1:100", "1:50"],
+                      ["ELITE Fx Majors/Minors & Precious Metals", "", "", "1:1000", "1:500", "1:200", "1:100", "1:50"],
                       ["Equity Indices and Energies", "", "", "", "1:100", "1:50", "1:20", "1:10"],
                       ["Stocks", "", "", "", "1:50", "1:20", "1:10", "1:5"],
                       ["CHF pairs and Exotics", "", "", "1:500", "", "1:200", "1:100", "1:50"],
@@ -95,8 +93,8 @@ export default function LeveragePage() {
                 </table>
               </div>
 
-              <ul className="mt-6 text-slate-300 list-disc list-inside space-y-2">
-                <li>To access leverage up to 1:5000, open an Optimus trading account and fulfill the requirements.</li>
+                <ul className="mt-6 text-slate-300 list-disc list-inside space-y-2">
+                <li>To access leverage up to 1:5000, open a Premium account and meet the eligibility requirements.</li>
                 <li>The maximum leverage allowed on Metals and FX Pairs is set to 1:200 on new positions opened between Fridays at 22:00 until Monday to 02:00 (GMT+3).</li>
                 <li>The above leverage levels do not apply to cryptocurrencies.</li>
               </ul>
@@ -138,7 +136,7 @@ export default function LeveragePage() {
               </div>
 
               <div className="mt-8 text-center">
-                <Link href="/register/" className="inline-block rounded-md bg-[#0f766e] text-white px-8 py-3 font-semibold hover:bg-[#0e665f]">
+                <Link href="/register/" className="inline-block rounded-md bg-slate-300 text-slate-900 px-8 py-3 font-semibold hover:bg-slate-400">
                   Register
                 </Link>
               </div>

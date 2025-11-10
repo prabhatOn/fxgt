@@ -4,16 +4,16 @@ const videoUrl = "https://live.cdn-fxgt.com/2025/07/lol-2.mp4";
 
 const resources = [
   {
-    title: 'Trading Toolkit',
-    description: 'Access advanced technical indicators, real-time economic calendars, and position calculators to optimize entry and exit points.',
+    title: 'Investment Toolkit',
+    description: 'Access advanced market indicators, real-time economic calendars, and investment calculators to optimize your portfolio decisions.',
   },
   {
-    title: 'Blog',
-    description: 'Read daily market news and insights, technical analysis, and fundamental research from our expert team of analysts.',
+    title: 'Market Insights',
+    description: 'Stay informed with daily market updates, expert analysis, and comprehensive research from our team of financial professionals.',
   },
   {
-    title: 'Demo Account',
-    description: 'Master your trades in risk-free environment using virtual funds.',
+    title: 'Practice Account',
+    description: 'Perfect your investment strategies in a risk-free environment using virtual funds.',
   },
 ];
 
@@ -25,10 +25,10 @@ const TradingResources = () => {
           <div>
             <div className="mb-8">
               <h2 className="font-display text-[2rem] font-extrabold leading-[1.2] tracking-[-0.02em] text-[#1a1a1a] lg:text-[2.5rem]">
-                No more guesswork: Trading decisions based on knowledge
+                Make informed decisions: Investment choices backed by knowledge
               </h2>
               <p className="font-body mx-auto mt-4 max-w-[800px] text-lg leading-[1.6] text-[#666666]">
-                Our trading resources are designed to improve performance at every stage of your trading journey – make the most of them.
+                Our investment resources are designed to enhance your performance at every stage of your journey – leverage them effectively.
               </p>
             </div>
 
@@ -51,7 +51,7 @@ const TradingResources = () => {
             <div className="text-left lg:text-left">
               <a
                 href="/register"
-                className="inline-block rounded-lg bg-[#0f766e] px-8 py-3.5 font-semibold text-white transition-colors duration-300 hover:bg-[#0d6b63]"
+                className="inline-block rounded-lg bg-slate-300 px-8 py-3.5 font-semibold text-slate-900 transition-colors duration-300 hover:bg-slate-400"
               >
                 Register
               </a>

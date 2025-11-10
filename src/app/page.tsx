@@ -24,7 +24,6 @@ export default function HomePage() {
         <CopyTradingSection />
         <MobileAppShowcase />
         <TradingResources />
-        <AwardsShowcase />
         <VideoCta />
       </main>
 

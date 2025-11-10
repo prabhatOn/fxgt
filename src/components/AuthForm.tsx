@@ -14,10 +14,10 @@ export default function AuthForm({ defaultTab = "login", maxWidthClass = 'max-w-
   return (
   <div className={`mx-auto ${maxWidthClass} p-6 rounded-2xl shadow-md border bg-white`}>
       <div className="flex items-center gap-6 border-b pb-4">
-        <button onClick={() => setTab("login")} className={`flex-1 text-center py-2 ${tab === 'login' ? 'text-[#0f766e] border-b-4 border-[#0f766e]' : 'text-slate-600'}`}>
+        <button onClick={() => setTab("login")} className={`flex-1 text-center py-2 ${tab === 'login' ? 'text-slate-700 border-b-4 border-slate-700' : 'text-slate-600'}`}>
           Login
         </button>
-        <button onClick={() => setTab("register")} className={`flex-1 text-center py-2 ${tab === 'register' ? 'text-[#0f766e] border-b-4 border-[#0f766e]' : 'text-slate-600'}`}>
+        <button onClick={() => setTab("register")} className={`flex-1 text-center py-2 ${tab === 'register' ? 'text-slate-700 border-b-4 border-slate-700' : 'text-slate-600'}`}>
           Register
         </button>
       </div>
@@ -40,11 +40,11 @@ export default function AuthForm({ defaultTab = "login", maxWidthClass = 'max-w-
           </div>
 
           <div>
-            <Button className="w-full bg-[#0f766e] text-white">Log In</Button>
+            <Button className="w-full bg-slate-300 text-slate-900 hover:bg-slate-400">Log In</Button>
           </div>
 
           <div className="text-center text-sm text-slate-600">
-            <a href="#" className="underline">Forgot password?</a>
+            <a href="#" className="hover:text-slate-900">Forgot password?</a>
           </div>
         </form>
       ) : (
@@ -112,10 +112,10 @@ export default function AuthForm({ defaultTab = "login", maxWidthClass = 'max-w-
           </div>
 
           <div>
-            <Button className="w-full bg-[#0f766e] text-white">REGISTER NOW</Button>
+            <Button className="w-full bg-slate-300 text-slate-900 hover:bg-slate-400">REGISTER NOW</Button>
           </div>
 
-          <p className="text-xs text-slate-500">By clicking 'REGISTER NOW', I confirm that I am over 18 years old and have read, understood, and agree to the <a href="/legal#terms" className="underline">T&Cs</a> and <a href="/legal#privacy" className="underline">Privacy Policy</a>.</p>
+          <p className="text-xs text-slate-500">By clicking 'REGISTER NOW', I confirm that I am over 18 years old and have read, understood, and agree to the <a href="/legal#terms" className="hover:text-slate-700">T&Cs</a> and <a href="/legal#privacy" className="hover:text-slate-700">Privacy Policy</a>.</p>
         </form>
       )}
     </div>

@@ -25,7 +25,7 @@ export default function LegalPage() {
         <section id="terms" className="mx-auto max-w-6xl px-6 lg:px-8 py-12">
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-md">
             <h2 className="text-2xl text-slate-800 font-semibold">Terms &amp; Conditions</h2>
-            <p className="mt-4 text-slate-700">These Terms &amp; Conditions (&quot;Terms&quot;) govern your use of the services provided by FXGT (the &quot;Company&quot;). By accessing or using our website, products, or services you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use our services.</p>
+            <p className="mt-4 text-slate-700">These Terms &amp; Conditions (&quot;Terms&quot;) govern your use of the services provided by Investmin (the &quot;Company&quot;). By accessing or using our website, products, or services you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use our services.</p>
 
             <h3 className="mt-6 text-slate-800 font-semibold">1. Eligibility</h3>
             <p className="text-slate-700">You must be 18 years or older and have the legal capacity to enter into binding contracts under applicable law to open and operate an account with the Company.</p>
@@ -34,10 +34,10 @@ export default function LegalPage() {
             <p className="text-slate-700">When registering, you agree to provide accurate, current, and complete information. You are responsible for maintaining the confidentiality of your account credentials and for all activity under your account.</p>
 
             <h3 className="mt-6 text-slate-800 font-semibold">3. Services and Fees</h3>
-            <p className="text-slate-700">The Company provides brokerage and related services. Fees, charges, and other terms for specific products are set out on the website and may change from time to time. You agree to review these terms before using any service.</p>
+            <p className="text-slate-700">The Company provides investment services and related products. Fees, charges, and other terms for specific products are set out on the website and may change from time to time. You agree to review these terms before using any service.</p>
 
             <h3 className="mt-6 text-slate-800 font-semibold">4. Risk Disclosure</h3>
-            <p className="text-slate-700">Trading financial instruments involves risk and is not suitable for all investors. Past performance is not indicative of future results. You should carefully consider your risk tolerance and seek independent financial advice where necessary.</p>
+            <p className="text-slate-700">Investing in financial instruments involves risk and is not suitable for all investors. Past performance is not indicative of future results. You should carefully consider your risk tolerance and seek independent financial advice where necessary.</p>
 
             <h3 className="mt-6 text-slate-800 font-semibold">5. Termination</h3>
             <p className="text-slate-700">The Company may suspend or terminate your account if you breach these Terms, where required by law, or for other legitimate reasons. On termination, outstanding obligations remain payable.</p>
@@ -52,7 +52,7 @@ export default function LegalPage() {
         <section id="privacy" className="mx-auto max-w-6xl px-6 lg:px-8 py-12">
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-md">
             <h2 className="text-2xl text-slate-800 font-semibold">Privacy Policy</h2>
-            <p className="mt-4 text-slate-700">FXGT is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal data.</p>
+            <p className="mt-4 text-slate-700">Investmin is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal data.</p>
 
             <h3 className="mt-6 text-slate-800 font-semibold">1. Personal Data We Collect</h3>
             <p className="text-slate-700">We collect information you provide during registration and account management, such as name, email, address, identity verification documents, transaction history, and other information necessary to provide our services and comply with legal obligations.</p>
@@ -72,7 +72,7 @@ export default function LegalPage() {
             <p className="mt-6 text-sm text-slate-500">For full details about our processing of your personal data and how to exercise your rights, please contact support or review the full policy provided here.</p>
 
             <div className="mt-6">
-              <Link href="/contact/" className="text-[#0f766e] underline">Contact our Data Protection Officer</Link>
+              <Link href="/contact/" className="text-slate-700 hover:text-slate-900">Contact our Data Protection Officer</Link>
             </div>
           </div>
         </section>

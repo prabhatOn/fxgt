@@ -38,7 +38,7 @@ const CookieNoticeModal = (): JSX.Element | null => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        if (!getCookie('fxgt_cookie_consent')) {
+        if (!getCookie('investmin_cookie_consent')) {
             const timer = setTimeout(() => {
                 setIsVisible(true);
             }, 500); // Delay for animation
@@ -47,7 +47,7 @@ const CookieNoticeModal = (): JSX.Element | null => {
     }, []);
 
     const handleAgree = (): void => {
-        setCookie('fxgt_cookie_consent', 'true', 365);
+        setCookie('investmin_cookie_consent', 'true', 365);
         setIsVisible(false);
     };
 
@@ -75,14 +75,14 @@ const CookieNoticeModal = (): JSX.Element | null => {
                         </p>
                         <p className="font-body text-[#666666] text-[15px] font-normal">
                             By clicking 'Agree', you accept our use of cookies as outlined in our{' '}
-                            <a href="#"className="underline text-[#0f766e] hover:text-primary transition-colors">
+                            <a href="#"className="text-slate-700 hover:text-slate-900 transition-colors">
                                 cookies policy
                             </a>
                         </p>
                     </div>
                     <button
                         onClick={handleAgree}
-                        className="mt-6 bg-white border-2 border-[#0f766e] text-[#0f766e] py-3 px-12 rounded-lg font-body text-base font-semibold transition-colors duration-300 ease-out hover:bg-[#0f766e] hover:text-white"
+                        className="mt-6 bg-white border-2 border-slate-300 text-slate-900 py-3 px-12 rounded-lg font-body text-base font-semibold transition-colors duration-300 ease-out hover:bg-slate-300"
                     >
                         Agree
                     </button>

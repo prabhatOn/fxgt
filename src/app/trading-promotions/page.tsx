@@ -96,8 +96,6 @@ export default function TradingPromotionsPage() {
             <p className="mt-3 text-slate-600 max-w-2xl mx-auto">Promotions are just one way we deliver value. Low spreads, fast execution, and excellent support back our offers.</p>
           </div>
         </section>
-
-        <AwardsShowcase />
       </main>
 
       <Footer />
