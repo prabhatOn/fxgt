@@ -50,7 +50,7 @@ const TradingResources = () => {
 
             <div className="text-left lg:text-left">
               <a
-                href="/register"
+                href="https://trade.investminuae.com/register"
                 className="inline-block rounded-lg bg-slate-300 px-8 py-3.5 font-semibold text-slate-900 transition-colors duration-300 hover:bg-slate-400"
               >
                 Register

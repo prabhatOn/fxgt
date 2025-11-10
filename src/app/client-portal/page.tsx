@@ -131,8 +131,8 @@ export default function ClientPortalPage() {
               <p className="mt-3 text-slate-600">Sign in to your Investmin client portal to view balances, deposit, withdraw and manage accounts.</p>
 
               <div className="mt-6 flex gap-4">
-                <Link href="/log-in/" className="inline-block rounded-md bg-slate-300 px-6 py-3 text-slate-900 font-semibold hover:bg-slate-400">Log In</Link>
-                <Link href="/register/" className="inline-block rounded-md border border-slate-200 px-6 py-3 text-slate-800 font-semibold hover:bg-slate-50">Register</Link>
+                <a href="https://trade.investminuae.com/login" className="inline-block rounded-md bg-slate-300 px-6 py-3 text-slate-900 font-semibold hover:bg-slate-400">Log In</a>
+                <a href="https://trade.investminuae.com/register" className="inline-block rounded-md border border-slate-200 px-6 py-3 text-slate-800 font-semibold hover:bg-slate-50">Register</a>
               </div>
             </div>
           </div>

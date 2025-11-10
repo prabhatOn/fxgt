@@ -55,9 +55,9 @@ export default function CopyTradingPage() {
                 </p>
 
                 <div className="mt-10">
-                  <Link href="/register/" className="inline-block rounded-md bg-slate-300 px-8 py-3.5 text-base font-semibold text-slate-900 hover:bg-slate-400">
+                  <a href="https://trade.investminuae.com/register" className="inline-block rounded-md bg-slate-300 px-8 py-3.5 text-base font-semibold text-slate-900 hover:bg-slate-400">
                     Start Copy Investing
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -121,9 +121,9 @@ export default function CopyTradingPage() {
             </div>
 
             <div className="mt-10 text-center">
-              <Link href="/register/" className="inline-block rounded-lg bg-slate-300 px-8 py-3.5 text-base font-semibold text-slate-900 hover:bg-slate-400">
+              <a href="https://trade.investminuae.com/register" className="inline-block rounded-lg bg-slate-300 px-8 py-3.5 text-base font-semibold text-slate-900 hover:bg-slate-400">
                 Start Copy Investing
-              </Link>
+              </a>
             </div>
           </div>
         </section>

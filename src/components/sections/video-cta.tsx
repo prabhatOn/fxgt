@@ -30,7 +30,7 @@ const VideoCta = () => {
               Sign up and begin investing in minutes
             </p>
             <a
-              href="/register"
+              href="https://trade.investminuae.com/register"
               className="inline-block bg-slate-300 hover:bg-slate-400 text-slate-900 font-body font-semibold py-3.5 px-10 rounded-lg transition-colors text-base"
             >
               Register

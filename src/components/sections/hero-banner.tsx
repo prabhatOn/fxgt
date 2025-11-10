@@ -30,12 +30,12 @@ const HeroBanner = () => {
           Join <strong className="font-semibold text-[#202020]">thousands</strong> of investors and build your portfolio across global markets with advanced, easy-to-use tools.
         </p>
 
-        <Link
-          href="/register"
+        <a
+          href="https://trade.investminuae.com/register"
           className="inline-flex items-center justify-center bg-slate-300 text-slate-900 font-body font-semibold text-base py-3 px-10 rounded-[10px] mt-8 transition-all duration-300 ease-in-out hover:translate-y-[-2px] hover:bg-slate-400 shadow-[0_8px_24px_rgba(148,163,184,0.18)]"
         >
           Register
-        </Link>
+        </a>
 
         {/* trust / rating row (PCI | Excellent | stars | reviews on Trustpilot) */}
         <div className="flex items-center justify-center gap-4 mt-8 text-sm text-[#4b5563]">

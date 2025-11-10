@@ -235,14 +235,14 @@ export default function NavigationHeader() {
             asChild
             className="rounded-full border-slate-900 text-slate-500 font-semibold bg-transparent shadow-none hover:bg-slate-800"
           >
-            <Link href="/log-in/">Log In</Link>
+            <a href="https://trade.investminuae.com/login">Log In</a>
           </Button>
 
           <Button
             asChild
             className="rounded-full bg-slate-800 text-white font-semibold hover:bg-slate-800"
           >
-            <Link href="/register/">Register Now</Link>
+            <a href="https://trade.investminuae.com/register">Register Now</a>
           </Button>
         </div>
 

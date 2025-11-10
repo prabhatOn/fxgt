@@ -30,9 +30,9 @@ export default function LeveragePage() {
             </p>
 
             <div className="mt-8">
-              <Link href="/register/" className="inline-block rounded-md bg-slate-300 text-slate-900 px-6 py-3 font-semibold hover:bg-slate-400">
+              <a href="https://trade.investminuae.com/register" className="inline-block rounded-md bg-slate-300 text-slate-900 px-6 py-3 font-semibold hover:bg-slate-400">
                 Open account
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -136,9 +136,9 @@ export default function LeveragePage() {
               </div>
 
               <div className="mt-8 text-center">
-                <Link href="/register/" className="inline-block rounded-md bg-slate-300 text-slate-900 px-8 py-3 font-semibold hover:bg-slate-400">
+                <a href="https://trade.investminuae.com/register" className="inline-block rounded-md bg-slate-300 text-slate-900 px-8 py-3 font-semibold hover:bg-slate-400">
                   Register
-                </Link>
+                </a>
               </div>
             </div>
           </div>

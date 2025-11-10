@@ -56,9 +56,9 @@ function Card({ card }: { card: any }) {
       </ul>
 
       <div className="mt-4">
-        <Link href="/register/" className={`inline-block w-full text-center py-3 rounded-md ${card.highlight ? 'bg-slate-300 text-slate-900 hover:bg-slate-400' : 'border border-slate-300 text-slate-900 hover:bg-slate-100'}`}>
+        <a href="https://trade.investminuae.com/register" className={`inline-block w-full text-center py-3 rounded-md ${card.highlight ? 'bg-slate-300 text-slate-900 hover:bg-slate-400' : 'border border-slate-300 text-slate-900 hover:bg-slate-100'}`}>
           Register
-        </Link>
+        </a>
       </div>
     </div>
   );
@@ -163,9 +163,9 @@ export default function TradingAccountTypesPage() {
                   </div>
 
                   <div className="mt-4">
-                    <Link href="/register/" className={`inline-block w-full text-center py-3 rounded-md bg-slate-300 text-slate-900 hover:bg-slate-400`}>
+                    <a href="https://trade.investminuae.com/register" className={`inline-block w-full text-center py-3 rounded-md bg-slate-300 text-slate-900 hover:bg-slate-400`}>
                       Register
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
