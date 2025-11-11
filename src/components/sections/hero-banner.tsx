@@ -5,10 +5,10 @@ import Link from 'next/link';
 const HeroBanner = () => {
   return (
     <section
-      className="relative w-full flex items-center h-[90vh] overflow-hidden bg-white"
+      className="relative w-full flex items-center h-[110vh] md:h-[90vh] pt-10 md:pt-0 overflow-hidden bg-white md:mt-0"
     >
         <Image
-        src="/hero.webp"
+        src="/hero.jpg"
         alt="Stylized GT lettermark in the background"
         fill
         className="object-contain z-0 pointer-events-none opacity-20"

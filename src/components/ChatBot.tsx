@@ -41,24 +41,18 @@ const ChatBot = () => {
   const [showFAQs, setShowFAQs] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // Auto-open after loader animation
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (!hasOpened) {
-        setIsOpen(true);
-        setHasOpened(true);
-        // Add welcome message
-        setMessages([{
-          id: '1',
-          text: 'Welcome back, let us know if you have any questions.',
-          sender: 'bot',
-          timestamp: new Date()
-        }]);
-      }
-    }, 3000); // Open after 3 seconds (after splash screen)
-
-    return () => clearTimeout(timer);
-  }, [hasOpened]);
+  // Initialize welcome message when first opened
+  const handleToggleChat = () => {
+    if (!isOpen && messages.length === 0) {
+      setMessages([{
+        id: '1',
+        text: 'Welcome back, let us know if you have any questions.',
+        sender: 'bot',
+        timestamp: new Date()
+      }]);
+    }
+    setIsOpen(!isOpen);
+  };
 
   // Auto-scroll to bottom
   useEffect(() => {
@@ -122,27 +116,35 @@ const ChatBot = () => {
     <>
       {/* Chat Icon Button */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] text-white shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center ${
-          !isOpen && !hasOpened ? 'animate-spin' : ''
-        }`}
+        onClick={handleToggleChat}
         aria-label="Open chat"
+        className={`fixed z-50 bottom-6 right-6 w-14 h-14 rounded-full bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] text-white shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center group`}
       >
-        <MessageCircle size={24} />
+        <MessageCircle size={24} className={`transition-transform duration-500 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 w-[380px] max-h-[500px] flex flex-col animate-in slide-in-from-bottom-4 duration-300">
-          {/* Messages Area */}
-          <div className="flex-1 overflow-y-auto space-y-3 mb-3 p-4 bg-gradient-to-b from-gray-50/80 to-transparent rounded-2xl backdrop-blur-sm">
+        <div className="fixed z-50 bottom-20 right-4 sm:bottom-24 sm:right-6 flex flex-col animate-in slide-in-from-bottom-4 duration-300">
+          {/* Floating card (mobile small width bottom-right) and slightly larger on sm+ */}
+          <div className="w-[320px] sm:w-[380px] rounded-2xl bg-gradient-to-b from-gray-50/90 to-transparent backdrop-blur-sm shadow-lg sm:shadow-2xl overflow-hidden relative">
+            {/* Close button (visible on all sizes) */}
+            <button
+              onClick={() => setIsOpen(false)}
+              aria-label="Close chat"
+              className="absolute top-3 right-3 bg-white/70 hover:bg-white rounded-full p-1 text-gray-700 shadow-sm"
+            >
+              <X size={16} />
+            </button>
+            {/* Messages Area */}
+            <div className="flex-1 overflow-y-auto space-y-3 mb-3 p-3 max-h-[60vh] sm:max-h-[500px]">
             {messages.map((message) => (
               <div
                 key={message.id}
                 className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[85%] rounded-2xl px-5 py-3 shadow-md ${
+                  className={`max-w-[85%] sm:max-w-[80%] rounded-2xl px-4 py-3 shadow-md ${
                     message.sender === 'user'
                       ? 'bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] text-white'
                       : 'bg-white text-gray-800'
@@ -172,25 +174,26 @@ const ChatBot = () => {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input Area */}
-          <div className="bg-white rounded-2xl shadow-lg p-1">
-            <div className="flex gap-2 items-center px-3 py-2">
-              <input
-                type="text"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-                placeholder="Write a message..."
-                className="flex-1 px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none placeholder:text-gray-400"
-              />
-              <button
-                onClick={() => handleSendMessage()}
-                disabled={!inputValue.trim()}
-                className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] text-white flex items-center justify-center hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 flex-shrink-0"
-                aria-label="Send message"
-              >
-                <Send size={16} />
-              </button>
+            {/* Input Area */}
+            <div className="bg-white border-t border-gray-100">
+              <div className="flex gap-2 items-center px-3 py-3">
+                <input
+                  type="text"
+                  value={inputValue}
+                  onChange={(e) => setInputValue(e.target.value)}
+                  onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+                  placeholder="Write a message..."
+                  className="flex-1 px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none placeholder:text-gray-400"
+                />
+                <button
+                  onClick={() => handleSendMessage()}
+                  disabled={!inputValue.trim()}
+                  className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] text-white flex items-center justify-center hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 flex-shrink-0"
+                  aria-label="Send message"
+                >
+                  <Send size={16} />
+                </button>
+              </div>
             </div>
           </div>
         </div>

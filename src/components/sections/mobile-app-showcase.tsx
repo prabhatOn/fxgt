@@ -34,7 +34,7 @@ const MobileAppShowcase = () => {
                         
                         <div className="flex flex-col items-center justify-center gap-8 sm:flex-row lg:justify-start">
                             <div className="flex flex-col items-center gap-3 sm:items-start">
-                                <a href="https://play.google.com/store/apps/details?id=com.fxgt.app" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
+                                <a href="#" className="transition-transform hover:scale-105">
                                     <Image
                                         src={playStoreUrl}
                                         alt="Get it on Google Play"
@@ -42,7 +42,7 @@ const MobileAppShowcase = () => {
                                         height={40}
                                     />
                                 </a>
-                                <a href="https://apps.apple.com/app/fxgt-trade-the-markets/id6680187341" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
+                                <a href="#" className="transition-transform hover:scale-105">
                                      <Image
                                         src={appStoreUrl}
                                         alt="Download on the App Store"
