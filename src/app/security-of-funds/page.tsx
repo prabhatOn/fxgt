@@ -86,27 +86,6 @@ export default function SecurityOfFundsPage() {
                 <h3 className="text-lg text-slate-900 font-semibold mb-2">Capital & Reserves</h3>
                 <p className="text-slate-600">We maintain a capital adequacy ratio of 40%, which is four times more than the typical capital-to-risk weighted exposure ratio required by reputable regulators. This is much higher than most of our competitors, meaning that we offer one of the highest levels of protection of clients’ funds found anywhere in the industry.</p>
               </div>
-
-              <div className="bg-white rounded-xl p-8 shadow-sm">
-                <h3 className="text-lg text-slate-900 font-semibold mb-2">Regulation</h3>
-                <p className="text-slate-600">We are a fully regulated investment platform, adhering to all regulatory standards and a high level of capital adequacy ratio at all times.</p>
-
-                <div className="mt-4 text-sm text-slate-500">
-                  CT Global Ltd is a registered company in Seychelles, with Registration Number 8421720-1. It is regulated by the Seychelles Financial Services Authority (SFSA) under the Securities Dealer's License Number SD019.
-
-                  <br /><br />
-                  CT IO Markets (PTY) Ltd is a registered company in South Africa, with Registration Number 2015/059344/07. It is regulated by the South African Financial Services Conduct Authority (FSCA) under the Financial Services Provider (FSP) License Number 48896.
-
-                  <br /><br />
-                  CT Global Markets Ltd is a registered company in Vanuatu licensed and regulated by the Vanuatu Financial Services Commission (VFSC) under the Principal's License Number 700601 and has its registered address at Law Partners House, Kumul Highway, Port Vila, Vanuatu.
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl p-8 shadow-sm">
-                <h3 className="text-lg text-slate-900 font-semibold mb-2">Liability Insurance</h3>
-                <p className="text-slate-600">Our clients are insured up to a total of €1,000,000. This insurance includes market coverage to secure liabilities against clients and other third parties against: errors, omissions, negligence, or other risks that may result in financial loss.</p>
-                <p className="mt-4 text-sm"><a href="#" className="text-slate-700 hover:text-slate-900">View Certificate</a></p>
-              </div>
             </div>
           </div>
         </section>

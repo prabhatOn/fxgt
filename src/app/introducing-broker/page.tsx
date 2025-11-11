@@ -10,6 +10,15 @@ const IntroducingBrokerPage = () => {
       
       {/* Hero Section */}
       <section className="relative w-full py-20 md:py-32 overflow-hidden bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <div 
+            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-20"
+            style={{ backgroundImage: "url('/ib.webp')" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/10 via-[#0a0a0a]/20 to-[#1a1a1a]/50" />
+        </div>
+
         <div className="absolute inset-0 pointer-events-none opacity-5">
           <div className="absolute -left-20 -top-8 w-96 h-96 rounded-full bg-[#4b5563] blur-3xl" />
           <div className="absolute -right-20 -bottom-8 w-96 h-96 rounded-full bg-[#6b7280] blur-3xl" />
