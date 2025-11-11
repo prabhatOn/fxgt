@@ -26,12 +26,12 @@ export default function DepositsAndWithdrawalsPage() {
         <div className="max-w-[1200px] mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1 flex justify-center lg:justify-start">
             {/* phone mockup image - using same supabase host used elsewhere as placeholder */}
-            <div className="w-[320px] md:w-[420px] lg:w-[520px] -translate-x-8 lg:translate-x-0">
+            <div className="w-[420px] md:w-[420px] lg:w-[520px] -translate-x-8 lg:translate-x-0">
               <Image
                 src="/Trade-Without-Delay-Image.png.webp"
                 alt="App mockup"
                 width={520}
-                height={520}
+                height={720}
                 className="rounded-2xl"
               />
             </div>

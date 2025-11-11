@@ -60,7 +60,7 @@ const CopyTradingSection = () => {
             </ul>
             <a
               href="#"
-              className="inline-block self-start rounded-lg bg-slate-300 px-8 py-3.5 font-body text-base font-semibold text-slate-900 transition-all duration-200 hover:scale-[1.02] hover:bg-slate-400"
+              className="inline-block self-start rounded-lg bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] px-8 py-4 text-base font-semibold text-white hover:shadow-xl hover:scale-105 hover:from-[#9ea0a4] hover:via-[#6b6e73] hover:to-[#3d3f43] transition-all duration-300"
             >
               Start Copy Investing
             </a>

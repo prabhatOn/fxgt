@@ -31,7 +31,7 @@ const VideoCta = () => {
             </p>
             <a
               href="https://trade.investminuae.com/register"
-              className="inline-block bg-slate-300 hover:bg-slate-400 text-slate-900 font-body font-semibold py-3.5 px-10 rounded-lg transition-colors text-base"
+              className="inline-block bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] px-8 py-4 text-base font-semibold text-white hover:shadow-xl hover:scale-105 hover:from-[#9ea0a4] hover:via-[#6b6e73] hover:to-[#3d3f43] transition-colors duration-300 rounded-lg font-body"
             >
               Register
             </a>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const deviceMockupUrl = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/trade-from-the-palm-of-your-hands_jpg-13.webp";
+const deviceMockupUrl = "/Gemini_Generated_Image_fb7r4fb7r4fb7r4f.webp";
 const qrCodeUrl = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/app_qr_code-1-14.webp";
 const playStoreUrl = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/playstore_badge-1-15.webp";
 const appStoreUrl = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/appstore_badge-1-16.webp";
@@ -15,7 +15,7 @@ const MobileAppShowcase = () => {
                     alt=""
                     fill
                     priority
-                    className="object-cover filter brightness-75"
+                    className="object-cover  filter brightness-75"
                 />
             </div>
 
@@ -33,14 +33,6 @@ const MobileAppShowcase = () => {
                         </p>
                         
                         <div className="flex flex-col items-center justify-center gap-8 sm:flex-row lg:justify-start">
-                            <div className="flex-shrink-0">
-                                <Image 
-                                    src={qrCodeUrl}
-                                    alt="QR code to download Fusion FX app"
-                                    width={150}
-                                    height={150}
-                                />
-                            </div>
                             <div className="flex flex-col items-center gap-3 sm:items-start">
                                 <a href="https://play.google.com/store/apps/details?id=com.fxgt.app" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
                                     <Image

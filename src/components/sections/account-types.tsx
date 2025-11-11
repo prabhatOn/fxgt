@@ -114,7 +114,7 @@ const AccountTypesSection = () => {
         <div className="text-center mt-12">
             <a 
               href="https://trade.investminuae.com/register"
-              className="inline-block bg-slate-300 hover:bg-slate-400 text-slate-900 font-semibold py-[14px] px-8 rounded-lg text-base transition-colors"
+              className="inline-block bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] hover:shadow-xl hover:scale-105 hover:from-[#9ea0a4] hover:via-[#6b6e73] hover:to-[#3d3f43] text-slate-900 font-semibold py-[14px] px-8 rounded-lg text-base transition-colors"
             >
               Register
             </a>

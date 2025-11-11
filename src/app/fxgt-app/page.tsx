@@ -106,15 +106,7 @@ export default function FxgtAppPage() {
                 {/* Download card — QR + badges (matches provided image) */}
                 <div className="mt-8">
                   <div className="inline-flex items-center gap-6 rounded-2xl bg-black/60 border border-white/10 p-4 md:p-6 shadow-lg">
-                    <div className="flex-shrink-0">
-                      <Image
-                        src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/app-qr-code-23.webp"
-                        alt="QR code"
-                        width={100}
-                        height={100}
-                        className="rounded-sm bg-white"
-                      />
-                    </div>
+                    
 
                     <div className="flex items-center gap-4">
                       <a href="#" aria-label="Google Play" className="block">

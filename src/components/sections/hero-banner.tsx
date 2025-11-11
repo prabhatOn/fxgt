@@ -7,71 +7,69 @@ const HeroBanner = () => {
     <section
       className="relative w-full flex items-center h-[90vh] overflow-hidden bg-white"
     >
-        {/* <Image
-        src="/20251110_1525_Investmin Logo Design_remix_01k9pk15yhe88sfvrpjs4acbbm.png"
+        <Image
+        src="/hero.webp"
         alt="Stylized GT lettermark in the background"
         fill
-        className="object-contain z-0 pointer-events-none"
+        className="object-contain z-0 pointer-events-none opacity-20"
         priority
-      /> */}
+      />
 
-      <div className="relative z-20 w-full max-w-[1200px] mt-20 mx-auto px-6 flex flex-col items-center">
-        <h3 className="font-display font-bold text-lg md:text-base tracking-wide text-[#202020] uppercase">
-          Invest with Confidence.
+      <div className="relative z-20 w-full max-w-[1200px] mx-auto px-6 flex flex-col items-center">
+        <h3 className="font-display font-semibold text-sm md:text-base tracking-wide text-[#6b7280] uppercase animate-fade-in">
+          Invest with Confidence
         </h3>
 
         <h1
-          className="font-display font-medium text-[28px] sm:text-[35px] md:text-[64px] lg:text-[70px] leading-tight tracking-[-0.02em] text-[#202020] mt-4 max-w-[1200px] text-center"
+          className="font-display font-bold text-[32px] sm:text-[40px] md:text-[52px] lg:text-[56px] leading-tight tracking-[-0.02em] text-[#1f2937] mt-3 max-w-[900px] text-center animate-fade-in"
         >
-          SMART INVESTING STARTS HERE
+          Smart Investing Starts Here
         </h1>
 
-        <p className="font-body text-lg md:text-xl w-full mt-6 leading-relaxed text-[#465059]">
-          Join <strong className="font-semibold text-[#202020]">thousands</strong> of investors and build your portfolio across global markets with advanced, easy-to-use tools.
+        <p className="font-body text-base md:text-lg w-full max-w-[700px] mt-5 leading-relaxed text-[#4b5563] text-center animate-fade-in">
+          Join <strong className="font-semibold text-[#1f2937]">thousands</strong> of investors and build your portfolio across global markets with advanced, easy-to-use tools.
         </p>
 
         <a
           href="https://trade.investminuae.com/register"
-          className="inline-flex items-center justify-center bg-slate-300 text-slate-900 font-body font-semibold text-base py-3 px-10 rounded-[10px] mt-8 transition-all duration-300 ease-in-out hover:translate-y-[-2px] hover:bg-slate-400 shadow-[0_8px_24px_rgba(148,163,184,0.18)]"
+          className="inline-flex items-center justify-center bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] text-white font-body font-semibold text-base py-3.5 px-12 rounded-lg mt-8 transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-105 shadow-lg hover:from-[#9ea0a4] hover:via-[#6b6e73] hover:to-[#3d3f43] animate-fade-in"
         >
-          Register
+          Get Started
+          <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
         </a>
 
-        {/* trust / rating row (PCI | Excellent | stars | reviews on Trustpilot) */}
-        <div className="flex items-center justify-center gap-4 mt-8 text-sm text-[#4b5563]">
-           <Image
-            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a793a9f1-4117-4bf5-9dbe-f67342e2c6d5-fxgt-com/assets/images/Group_png-11.webp"
-            alt="Trustpilot stars"
-            width={60}
-            height={20}
-            className=""
-          />
-          <span className="h-4 w-px bg-[#e6e6e6] inline-block" />
-         
-          <a href="#" className="underline text-[#202020]">1,463 reviews on</a>
-          <span className="inline-flex items-center gap-2 text-[#202020] font-semibold">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#07a87e" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-            </svg>
-            Trustpilot
-          </span>
-        </div>
-
         {/* six feature items arranged as three columns with two rows (matches screenshot) */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full mt-12 text-center">
-          <div>
-            <h4 className="font-display font-light text-2xl md:text-xl text-[#202020]">Multiple Account Options</h4>
-            <p className="text-base md:text-lg text-[#6b7178] mt-4">Choose the account that fits your goals.</p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 w-full mt-14 text-center animate-fade-in">
+          <div className="group hover:scale-105 transition-transform duration-300">
+            <div className="w-16 h-16 bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-2xl transition-shadow">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h4 className="font-display font-semibold text-lg text-[#2d2f33] group-hover:text-[#5a5d63] transition-colors">Multiple Account Options</h4>
+            <p className="text-sm text-[#6b7280] mt-3">Choose the account that fits your goals.</p>
           </div>
 
-          <div>
-            <h4 className="font-display font-light text-2xl md:text-xl text-[#202020]">Mobile Platform</h4>
-            <p className="text-base md:text-lg text-[#6b7178] mt-4">Invest anywhere, anytime with ease.</p>
+          <div className="group hover:scale-105 transition-transform duration-300">
+            <div className="w-16 h-16 bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl transition-shadow">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h4 className="font-display font-semibold text-lg text-[#2d2f33] group-hover:text-[#5a5d63] transition-colors">Mobile Platform</h4>
+            <p className="text-sm text-[#6b7280] mt-3">Invest anywhere, anytime with ease.</p>
           </div>
 
-          <div>
-            <h4 className="font-display font-light text-2xl md:text-xl text-[#202020]">Industry Recognition</h4>
-            <p className="text-base md:text-lg text-[#6b7178] mb-4 mt-4">Trusted and recognized platform.</p>
+          <div className="group hover:scale-105 transition-transform duration-300">
+            <div className="w-16 h-16 bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl transition-shadow">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+            </div>
+            <h4 className="font-display font-semibold text-lg text-[#2d2f33] group-hover:text-[#5a5d63] transition-colors">Industry Recognition</h4>
+            <p className="text-sm text-[#6b7280] mt-3">Trusted and recognized platform.</p>
           </div>
         </div>
       </div>

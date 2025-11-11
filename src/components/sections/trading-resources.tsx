@@ -1,6 +1,6 @@
 import React from 'react';
 
-const videoUrl = "https://live.cdn-fxgt.com/2025/07/lol-2.mp4";
+const videoUrl = "/vid1.mp4";
 
 const resources = [
   {
@@ -51,7 +51,7 @@ const TradingResources = () => {
             <div className="text-left lg:text-left">
               <a
                 href="https://trade.investminuae.com/register"
-                className="inline-block rounded-lg bg-slate-300 px-8 py-3.5 font-semibold text-slate-900 transition-colors duration-300 hover:bg-slate-400"
+                className="inline-block rounded-lg bg-gradient-to-br from-[#8b8d91] via-[#5a5d63] to-[#2d2f33] px-8 py-4 font-semibold text-white transition-colors duration-300 hover:shadow-xl hover:scale-105 hover:from-[#9ea0a4] hover:via-[#6b6e73] hover:to-[#3d3f43]"
               >
                 Register
               </a>
@@ -60,7 +60,7 @@ const TradingResources = () => {
 
           {/* Right column: video showcase */}
           <div className="flex items-center justify-center self-center">
-            <div className="w-full max-w-[520px] overflow-hidden">
+            <div className="w-full max-w-[620px] overflow-hidden">
               <video
                 src={videoUrl}
                 autoPlay
@@ -68,7 +68,7 @@ const TradingResources = () => {
                 loop
                 playsInline
                 preload="metadata"
-                className="w-full h-64 md:h-[360px] lg:h-[420px] object-cover bg-[#000]"
+                className="w-full ml-10 h-64 md:h-[360px] lg:h-[420px] object-cover bg-[#000]"
               />
             </div>
           </div>
