@@ -91,7 +91,7 @@ export default function FxgtAppPage() {
         <section className="relative py-20 h-[100vh]">
           {/* Background image */}
           <div className="absolute inset-0 z-0">
-            <Image src="/fxgtapp-banner-image.jpg.webp" alt="FXGT banner" fill className="object-cover object-center" priority />
+            <Image src="/fxgtapp-banner-image.jpg.png" alt="FXGT banner" fill className="object-cover object-center" priority />
             <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
           </div>
 

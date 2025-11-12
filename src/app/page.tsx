@@ -13,6 +13,7 @@ import MobileAppShowcase from '@/components/sections/mobile-app-showcase';
 import TradingResources from '@/components/sections/trading-resources';
 import AwardsShowcase from '@/components/sections/awards-showcase';
 import VideoCta from '@/components/sections/video-cta';
+import ContactSection from '@/components/sections/contact-section';
 import Footer from '@/components/sections/footer';
 import CookieNoticeModal from '@/components/sections/cookie-notice-modal';
 import WelcomeSplash from '@/components/WelcomeSplash';
@@ -35,6 +36,7 @@ export default function HomePage() {
           <CopyTradingSection />
           <MobileAppShowcase />
           <TradingResources />
+          <ContactSection />
           <VideoCta />
         </main>
 

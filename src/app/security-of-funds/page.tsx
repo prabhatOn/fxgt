@@ -14,7 +14,7 @@ export default function SecurityOfFundsPage() {
         <section className="relative bg-black h-[90vh] text-white py-24 overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-100"
-            style={{ backgroundImage: `url('/security-of-funds-banner.jpg.webp')` }}
+            style={{ backgroundImage: `url('/security-of-funds-banner.jpg.png')` }}
             aria-hidden
           />
 
