@@ -74,7 +74,7 @@ export default function ClientPortalPage() {
           <section className="relative h-[140vh] text-white overflow-hidden">
           {/* Full-bleed background image (client_portal.jpg.webp) with dark gradient overlay */}
           <div className="absolute inset-0 z-0">
-            <Image src="/client_portal.jpg.webp" alt="Client portal background" fill className="object-cover object-right" priority />
+            <Image src="/Hero-Banner_1920x800_2.jpg.webp" alt="Client portal background" fill className="object-cover object-right" priority />
           </div>
           {/* dark overlay to ensure text legibility */}
           <div className="absolute inset-0 bg-black/70 lg:bg-gradient-to-r lg:from-black/85 lg:via-black/60 lg:to-transparent z-10" />
