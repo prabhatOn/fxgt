@@ -21,7 +21,7 @@ const features = [
     title: "Auto-Close orders",
     description:
       "Stay in control of your trades by closing them at predefined P/L levels or equity percentages. Manage your risks with precision and protect your profits.",
-    icon: "/Trade-Without-Delay-Image.png.webp",
+    icon: "/online-investment-1-1-1png.webp",
   },
   {
     title: "Multi-chart, unlimited windows",
@@ -54,7 +54,7 @@ export default function FxgtTraderPage() {
         {/* Hero */}
         <section className="relative h-[100vh] bg-black">
           <div className="absolute inset-0 z-0">
-            <Image src="/FXGTtrader-banner-desktop.jpg.webp" alt="FXGT Trader" fill className="object-cover object-right" priority />
+            <Image src="/FXGTtrader-banner-desktop.jpg.png" alt="FXGT Trader" fill className="object-cover object-right" priority />
             <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/80 to-transparent" />
           </div>
 
@@ -133,7 +133,7 @@ export default function FxgtTraderPage() {
 
             <div className="flex justify-center lg:justify-end">
               <div className="w-[520px]">
-                <Image src="/Rectangle-21881.png.webp" alt="trader monitor" width={920} height={560} className="object-contain rounded-lg shadow-lg" />
+                <Image src="/Rectangle-21881.png.png" alt="trader monitor" width={920} height={560} className="object-contain rounded-lg shadow-lg" />
               </div>
             </div>
           </div>

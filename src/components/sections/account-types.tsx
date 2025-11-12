@@ -66,14 +66,14 @@ const AccountCard = ({ title, subtitle, features, isHotPick }: AccountTypeProps)
   const cleanFeatures = features.map(f => f.replace(/️/g, '').trim());
 
   return (
-    <div className="relative bg-card border border-border rounded-2xl p-8 flex flex-col min-h-[400px] flex-shrink-0 w-[90vw] sm:w-auto md:w-[45vw] lg:w-full snap-start transition-transform duration-300 hover:scale-[1.02]">
+    <div className="relative bg-card border border-border rounded-2xl p-6 md:p-8 flex flex-col min-h-[400px] flex-shrink-0 w-[85vw] sm:w-[320px] md:w-full snap-start transition-transform duration-300 hover:scale-[1.02]">
       {isHotPick && (
-        <span className="absolute top-8 right-8 bg-slate-400 text-slate-900 text-[12px] font-semibold px-3 py-1 rounded-full">
+        <span className="absolute top-6 right-6 md:top-8 md:right-8 bg-slate-400 text-slate-900 text-[12px] font-semibold px-3 py-1 rounded-full">
           HOT PICK
         </span>
       )}
       <div className="flex flex-col flex-grow">
-        <h3 className="font-display font-bold text-white text-[28px] leading-tight mb-3 pt-10 lg:pt-0">
+        <h3 className="font-display font-bold text-white text-[24px] md:text-[28px] leading-tight mb-3 pt-10 md:pt-0">
           {title}
         </h3>
         <p className="font-body text-muted-foreground text-base mb-6 min-h-[64px]">
@@ -105,7 +105,7 @@ const AccountTypesSection = () => {
           </p>
         </div>
 
-        <div className="flex lg:grid lg:grid-cols-5 gap-6 overflow-x-auto snap-x snap-mandatory pb-4 -mx-8 lg:mx-0 px-8 lg:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div className="flex md:grid md:grid-cols-2 xl:grid-cols-5 gap-4 md:gap-5 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory pb-4 -mx-8 md:mx-0 px-8 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           {accountTypesData.map((account) => (
             <AccountCard key={account.title} {...account} />
           ))}
