@@ -73,7 +73,7 @@ export default function AboutPage() {
               </div>
 
               <div className="flex flex-col items-center">
-                <Image src="/online-investment-1-1-1.png.webp" alt="Powerful Investment Platforms" width={120} height={120} />
+                <Image src="/online-investment-1-1-1png.webp" alt="Powerful Investment Platforms" width={120} height={120} />
                 <h3 className="mt-6 text-2xl font-semibold">Powerful Investment Platforms</h3>
                 <p className="mt-3 text-slate-600 max-w-[260px]">Invest on the industry-leading MT4 and MT5 platforms, enhanced with an advanced toolkit for analysis and execution.</p>
               </div>
